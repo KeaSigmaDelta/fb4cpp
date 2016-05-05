@@ -1,0 +1,234 @@
+\hypertarget{classfl4cpp_1_1_status_node}{}\section{fl4cpp\+:\+:Status\+Node Class Reference}
+\label{classfl4cpp_1_1_status_node}\index{fl4cpp\+::\+Status\+Node@{fl4cpp\+::\+Status\+Node}}
+
+
+{\ttfamily \#include $<$Status\+Node.\+h$>$}
+
+Inheritance diagram for fl4cpp\+:\+:Status\+Node\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classfl4cpp_1_1_status_node}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classfl4cpp_1_1_status_node_ad0f19449b0dd5a4bf533f37b381cf540}{Status\+Node} (\hyperlink{classfl4cpp_1_1_session}{Session} $\ast$session, \hyperlink{classfl4cpp_1_1_profile_node}{Profile\+Node} $\ast$root\+Node)
+\item 
+virtual bool \hyperlink{classfl4cpp_1_1_status_node_aa99586c53782cfedd1f7d21e3508c20c}{init\+With\+Json} (Json\+::\+Value $\ast$node\+Data)
+\item 
+\hyperlink{classfl4cpp_1_1_node}{Node} $\ast$ \hyperlink{classfl4cpp_1_1_status_node_a5e7f1125af1dac536e4261e39c499171}{get\+From} (bool \hyperlink{classfl4cpp_1_1_node_a1dd4594ffd7eb08e9e8c5031d2109a59}{init\+From\+Graph\+Api}=true)
+\item 
+void \hyperlink{classfl4cpp_1_1_status_node_ae86c8eba3295e0dcd460310ff73f44e7}{set\+From} (\hyperlink{classfl4cpp_1_1_node}{Node} $\ast$from)
+\item 
+std\+::string \hyperlink{classfl4cpp_1_1_status_node_aac8ebbdf9a59455bacc180946ad25e06}{get\+Message} () const 
+\item 
+void \hyperlink{classfl4cpp_1_1_status_node_a7719a47fbc72b4fa26d88502e5e56f17}{set\+Message} (std\+::string message)
+\item 
+\hyperlink{classfl4cpp_1_1_page_node}{Page\+Node} $\ast$ \hyperlink{classfl4cpp_1_1_status_node_a634cb0b44f9303ac62630b9fb901eb59}{get\+Place} ()
+\item 
+void \hyperlink{classfl4cpp_1_1_status_node_a598d7291701df21efa48ddf71d603cbb}{set\+Place} (\hyperlink{classfl4cpp_1_1_page_node}{Page\+Node} $\ast$place)
+\item 
+std\+::string \hyperlink{classfl4cpp_1_1_status_node_a8f9656446c7ad2cee0be531dba3e7ab4}{get\+Updated\+Time} () const 
+\item 
+void \hyperlink{classfl4cpp_1_1_status_node_a6816c0cd53ae4cb334a7cb7e09bf2ddd}{set\+Updated\+Time} (std\+::string updated\+Time)
+\item 
+std\+::string \hyperlink{classfl4cpp_1_1_status_node_aa2569a3ee0d6040915c573da7ec9aac7}{get\+From\+Node\+Id} () const 
+\item 
+void {\bfseries set\+From\+Node\+Id} (std\+::string from\+Node\+Id)\hypertarget{classfl4cpp_1_1_status_node_a1d012a10abbaba819139441500b9a26d}{}\label{classfl4cpp_1_1_status_node_a1d012a10abbaba819139441500b9a26d}
+
+\item 
+std\+::string \hyperlink{classfl4cpp_1_1_status_node_a7835b71f23413116bc5ded5f0379bc0a}{get\+From\+Name} () const 
+\item 
+void {\bfseries set\+From\+Name} (std\+::string from\+Name)\hypertarget{classfl4cpp_1_1_status_node_a209d614aa476b85867d4745a816b86e0}{}\label{classfl4cpp_1_1_status_node_a209d614aa476b85867d4745a816b86e0}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Represents Status \hyperlink{classfl4cpp_1_1_node}{Node} of the facebook Graph Api. You can find detailed description of the fields and edges of this node in the Graph Api documentation. See\+: \href{https://developers.facebook.com/docs/graph-api/reference/v2.0/status}{\tt https\+://developers.\+facebook.\+com/docs/graph-\/api/reference/v2.\+0/status}
+
+N\+O\+TE\+: Setter methods of the \hyperlink{classfl4cpp_1_1_status_node}{Status\+Node} class are used for initialization of the local copy, and has no affect on Graph Api copy. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{fl4cpp\+::\+Status\+Node@{fl4cpp\+::\+Status\+Node}!Status\+Node@{Status\+Node}}
+\index{Status\+Node@{Status\+Node}!fl4cpp\+::\+Status\+Node@{fl4cpp\+::\+Status\+Node}}
+\subsubsection[{\texorpdfstring{Status\+Node(\+Session $\ast$session, Profile\+Node $\ast$root\+Node)}{StatusNode(Session *session, ProfileNode *rootNode)}}]{\setlength{\rightskip}{0pt plus 5cm}Status\+Node\+::\+Status\+Node (
+\begin{DoxyParamCaption}
+\item[{{\bf Session} $\ast$}]{session, }
+\item[{{\bf Profile\+Node} $\ast$}]{root\+Node}
+\end{DoxyParamCaption}
+)}\hypertarget{classfl4cpp_1_1_status_node_ad0f19449b0dd5a4bf533f37b381cf540}{}\label{classfl4cpp_1_1_status_node_ad0f19449b0dd5a4bf533f37b381cf540}
+Constructs \hyperlink{classfl4cpp_1_1_status_node}{Status\+Node} object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em session} & Pointer to a current \hyperlink{classfl4cpp_1_1_session}{Session} object. \\
+\hline
+{\em root\+Node} & Pointer to a root node. (Profile \hyperlink{classfl4cpp_1_1_node}{Node} on behalf of which all actions with this node will be performed). \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{fl4cpp\+::\+Status\+Node@{fl4cpp\+::\+Status\+Node}!get\+From@{get\+From}}
+\index{get\+From@{get\+From}!fl4cpp\+::\+Status\+Node@{fl4cpp\+::\+Status\+Node}}
+\subsubsection[{\texorpdfstring{get\+From(bool init\+From\+Graph\+Api=true)}{getFrom(bool initFromGraphApi=true)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Node} $\ast$ Status\+Node\+::get\+From (
+\begin{DoxyParamCaption}
+\item[{bool}]{init\+From\+Graph\+Api = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}\hypertarget{classfl4cpp_1_1_status_node_a5e7f1125af1dac536e4261e39c499171}{}\label{classfl4cpp_1_1_status_node_a5e7f1125af1dac536e4261e39c499171}
+Requests a \hyperlink{classfl4cpp_1_1_node}{Node} of the author of this node from the Graph Api server.
+
+
+\begin{DoxyParams}{Parameters}
+{\em init\+From\+Graph\+Api} & Flag, that if set to false will result in returning a pointer to a local copy of author \hyperlink{classfl4cpp_1_1_node}{Node} without sending a request to a Facebook server. If no local copy of author \hyperlink{classfl4cpp_1_1_node}{Node} is present -\/ it will be requested from Graph Api.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to an author node if \hyperlink{classfl4cpp_1_1_node}{Node} was received and initialized correctly, otherwise -\/ null. 
+\end{DoxyReturn}
+\index{fl4cpp\+::\+Status\+Node@{fl4cpp\+::\+Status\+Node}!get\+From\+Name@{get\+From\+Name}}
+\index{get\+From\+Name@{get\+From\+Name}!fl4cpp\+::\+Status\+Node@{fl4cpp\+::\+Status\+Node}}
+\subsubsection[{\texorpdfstring{get\+From\+Name() const }{getFromName() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string fl4cpp\+::\+Status\+Node\+::get\+From\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classfl4cpp_1_1_status_node_a7835b71f23413116bc5ded5f0379bc0a}{}\label{classfl4cpp_1_1_status_node_a7835b71f23413116bc5ded5f0379bc0a}
+Gets author name.
+
+\begin{DoxyReturn}{Returns}
+Author name. 
+\end{DoxyReturn}
+\index{fl4cpp\+::\+Status\+Node@{fl4cpp\+::\+Status\+Node}!get\+From\+Node\+Id@{get\+From\+Node\+Id}}
+\index{get\+From\+Node\+Id@{get\+From\+Node\+Id}!fl4cpp\+::\+Status\+Node@{fl4cpp\+::\+Status\+Node}}
+\subsubsection[{\texorpdfstring{get\+From\+Node\+Id() const }{getFromNodeId() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string fl4cpp\+::\+Status\+Node\+::get\+From\+Node\+Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classfl4cpp_1_1_status_node_aa2569a3ee0d6040915c573da7ec9aac7}{}\label{classfl4cpp_1_1_status_node_aa2569a3ee0d6040915c573da7ec9aac7}
+Gets author \hyperlink{classfl4cpp_1_1_node}{Node} Id.
+
+\begin{DoxyReturn}{Returns}
+Author \hyperlink{classfl4cpp_1_1_node}{Node} Id. 
+\end{DoxyReturn}
+\index{fl4cpp\+::\+Status\+Node@{fl4cpp\+::\+Status\+Node}!get\+Message@{get\+Message}}
+\index{get\+Message@{get\+Message}!fl4cpp\+::\+Status\+Node@{fl4cpp\+::\+Status\+Node}}
+\subsubsection[{\texorpdfstring{get\+Message() const }{getMessage() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string fl4cpp\+::\+Status\+Node\+::get\+Message (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classfl4cpp_1_1_status_node_aac8ebbdf9a59455bacc180946ad25e06}{}\label{classfl4cpp_1_1_status_node_aac8ebbdf9a59455bacc180946ad25e06}
+Gets message.
+
+\begin{DoxyReturn}{Returns}
+Message. 
+\end{DoxyReturn}
+\index{fl4cpp\+::\+Status\+Node@{fl4cpp\+::\+Status\+Node}!get\+Place@{get\+Place}}
+\index{get\+Place@{get\+Place}!fl4cpp\+::\+Status\+Node@{fl4cpp\+::\+Status\+Node}}
+\subsubsection[{\texorpdfstring{get\+Place()}{getPlace()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Page\+Node}$\ast$ fl4cpp\+::\+Status\+Node\+::get\+Place (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classfl4cpp_1_1_status_node_a634cb0b44f9303ac62630b9fb901eb59}{}\label{classfl4cpp_1_1_status_node_a634cb0b44f9303ac62630b9fb901eb59}
+Gets place.
+
+\begin{DoxyReturn}{Returns}
+Pointer to a Page \hyperlink{classfl4cpp_1_1_node}{Node}. 
+\end{DoxyReturn}
+\index{fl4cpp\+::\+Status\+Node@{fl4cpp\+::\+Status\+Node}!get\+Updated\+Time@{get\+Updated\+Time}}
+\index{get\+Updated\+Time@{get\+Updated\+Time}!fl4cpp\+::\+Status\+Node@{fl4cpp\+::\+Status\+Node}}
+\subsubsection[{\texorpdfstring{get\+Updated\+Time() const }{getUpdatedTime() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string fl4cpp\+::\+Status\+Node\+::get\+Updated\+Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classfl4cpp_1_1_status_node_a8f9656446c7ad2cee0be531dba3e7ab4}{}\label{classfl4cpp_1_1_status_node_a8f9656446c7ad2cee0be531dba3e7ab4}
+Gets updated time.
+
+\begin{DoxyReturn}{Returns}
+Updated time. 
+\end{DoxyReturn}
+\index{fl4cpp\+::\+Status\+Node@{fl4cpp\+::\+Status\+Node}!init\+With\+Json@{init\+With\+Json}}
+\index{init\+With\+Json@{init\+With\+Json}!fl4cpp\+::\+Status\+Node@{fl4cpp\+::\+Status\+Node}}
+\subsubsection[{\texorpdfstring{init\+With\+Json(\+Json\+::\+Value $\ast$node\+Data)}{initWithJson(Json::Value *nodeData)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Status\+Node\+::init\+With\+Json (
+\begin{DoxyParamCaption}
+\item[{Json\+::\+Value $\ast$}]{node\+Data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classfl4cpp_1_1_status_node_aa99586c53782cfedd1f7d21e3508c20c}{}\label{classfl4cpp_1_1_status_node_aa99586c53782cfedd1f7d21e3508c20c}
+Initializes \hyperlink{classfl4cpp_1_1_node}{Node} object with Json data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em node\+Data} & Json object with \hyperlink{classfl4cpp_1_1_node}{Node} data, formatted as in usual response from Graph Api on requesting a particular node.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if node object initialized successfully, otherwise -\/ false. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classfl4cpp_1_1_node_aac67098119277a58b66459323ea03d87}{fl4cpp\+::\+Node}.
+
+\index{fl4cpp\+::\+Status\+Node@{fl4cpp\+::\+Status\+Node}!set\+From@{set\+From}}
+\index{set\+From@{set\+From}!fl4cpp\+::\+Status\+Node@{fl4cpp\+::\+Status\+Node}}
+\subsubsection[{\texorpdfstring{set\+From(\+Node $\ast$from)}{setFrom(Node *from)}}]{\setlength{\rightskip}{0pt plus 5cm}void fl4cpp\+::\+Status\+Node\+::set\+From (
+\begin{DoxyParamCaption}
+\item[{{\bf Node} $\ast$}]{from}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classfl4cpp_1_1_status_node_ae86c8eba3295e0dcd460310ff73f44e7}{}\label{classfl4cpp_1_1_status_node_ae86c8eba3295e0dcd460310ff73f44e7}
+Sets author node.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Pointer} & to an author node. \\
+\hline
+\end{DoxyParams}
+\index{fl4cpp\+::\+Status\+Node@{fl4cpp\+::\+Status\+Node}!set\+Message@{set\+Message}}
+\index{set\+Message@{set\+Message}!fl4cpp\+::\+Status\+Node@{fl4cpp\+::\+Status\+Node}}
+\subsubsection[{\texorpdfstring{set\+Message(std\+::string message)}{setMessage(std::string message)}}]{\setlength{\rightskip}{0pt plus 5cm}void fl4cpp\+::\+Status\+Node\+::set\+Message (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{message}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classfl4cpp_1_1_status_node_a7719a47fbc72b4fa26d88502e5e56f17}{}\label{classfl4cpp_1_1_status_node_a7719a47fbc72b4fa26d88502e5e56f17}
+Sets message.
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & Message. \\
+\hline
+\end{DoxyParams}
+\index{fl4cpp\+::\+Status\+Node@{fl4cpp\+::\+Status\+Node}!set\+Place@{set\+Place}}
+\index{set\+Place@{set\+Place}!fl4cpp\+::\+Status\+Node@{fl4cpp\+::\+Status\+Node}}
+\subsubsection[{\texorpdfstring{set\+Place(\+Page\+Node $\ast$place)}{setPlace(PageNode *place)}}]{\setlength{\rightskip}{0pt plus 5cm}void fl4cpp\+::\+Status\+Node\+::set\+Place (
+\begin{DoxyParamCaption}
+\item[{{\bf Page\+Node} $\ast$}]{place}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classfl4cpp_1_1_status_node_a598d7291701df21efa48ddf71d603cbb}{}\label{classfl4cpp_1_1_status_node_a598d7291701df21efa48ddf71d603cbb}
+Sets place.
+
+
+\begin{DoxyParams}{Parameters}
+{\em place} & Pointer to a Page \hyperlink{classfl4cpp_1_1_node}{Node}. \\
+\hline
+\end{DoxyParams}
+\index{fl4cpp\+::\+Status\+Node@{fl4cpp\+::\+Status\+Node}!set\+Updated\+Time@{set\+Updated\+Time}}
+\index{set\+Updated\+Time@{set\+Updated\+Time}!fl4cpp\+::\+Status\+Node@{fl4cpp\+::\+Status\+Node}}
+\subsubsection[{\texorpdfstring{set\+Updated\+Time(std\+::string updated\+Time)}{setUpdatedTime(std::string updatedTime)}}]{\setlength{\rightskip}{0pt plus 5cm}void fl4cpp\+::\+Status\+Node\+::set\+Updated\+Time (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{updated\+Time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classfl4cpp_1_1_status_node_a6816c0cd53ae4cb334a7cb7e09bf2ddd}{}\label{classfl4cpp_1_1_status_node_a6816c0cd53ae4cb334a7cb7e09bf2ddd}
+Sets updated time.
+
+
+\begin{DoxyParams}{Parameters}
+{\em updated\+Time} & Updated time. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+F\+L4\+C\+P\+P/Status\+Node.\+h\item 
+F\+L4\+C\+P\+P/Status\+Node.\+cpp\end{DoxyCompactItemize}

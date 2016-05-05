@@ -1,0 +1,72 @@
+\hypertarget{classfl4cpp_1_1_profile_node}{}\section{fl4cpp\+:\+:Profile\+Node Class Reference}
+\label{classfl4cpp_1_1_profile_node}\index{fl4cpp\+::\+Profile\+Node@{fl4cpp\+::\+Profile\+Node}}
+
+
+{\ttfamily \#include $<$Profile\+Node.\+h$>$}
+
+Inheritance diagram for fl4cpp\+:\+:Profile\+Node\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classfl4cpp_1_1_profile_node}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classfl4cpp_1_1_profile_node_aed054a3dbc41db4a22a67af9c87da778}{Profile\+Node} (\hyperlink{classfl4cpp_1_1_session}{Session} $\ast$session, \hyperlink{classfl4cpp_1_1_profile_node}{Profile\+Node} $\ast$root\+Node, std\+::string node\+Type, bool deletable)
+\item 
+virtual bool \hyperlink{classfl4cpp_1_1_profile_node_a7ea2fc3e1cb5054df96842737cb3d20a}{is\+Root\+Node} () const 
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Intermediate class, that restricts derived Nodes to be one of the following type\+: User, Page, Group or Event. See\+: \href{https://developers.facebook.com/docs/graph-api/reference/v2.0/profile/}{\tt https\+://developers.\+facebook.\+com/docs/graph-\/api/reference/v2.\+0/profile/} 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{fl4cpp\+::\+Profile\+Node@{fl4cpp\+::\+Profile\+Node}!Profile\+Node@{Profile\+Node}}
+\index{Profile\+Node@{Profile\+Node}!fl4cpp\+::\+Profile\+Node@{fl4cpp\+::\+Profile\+Node}}
+\subsubsection[{\texorpdfstring{Profile\+Node(\+Session $\ast$session, Profile\+Node $\ast$root\+Node, std\+::string node\+Type, bool deletable)}{ProfileNode(Session *session, ProfileNode *rootNode, std::string nodeType, bool deletable)}}]{\setlength{\rightskip}{0pt plus 5cm}Profile\+Node\+::\+Profile\+Node (
+\begin{DoxyParamCaption}
+\item[{{\bf Session} $\ast$}]{session, }
+\item[{{\bf Profile\+Node} $\ast$}]{root\+Node, }
+\item[{std\+::string}]{node\+Type, }
+\item[{bool}]{deletable}
+\end{DoxyParamCaption}
+)}\hypertarget{classfl4cpp_1_1_profile_node_aed054a3dbc41db4a22a67af9c87da778}{}\label{classfl4cpp_1_1_profile_node_aed054a3dbc41db4a22a67af9c87da778}
+Constructs \hyperlink{classfl4cpp_1_1_profile_node}{Profile\+Node}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em session} & Pointer to a current \hyperlink{classfl4cpp_1_1_session}{Session} object. \\
+\hline
+{\em root\+Node} & Pointer to a root node (Profile \hyperlink{classfl4cpp_1_1_node}{Node} on behalf of which all actions with this node will be performed). \\
+\hline
+{\em node\+Type} & \hyperlink{classfl4cpp_1_1_node}{Node} type string. \\
+\hline
+{\em deletable} & Tells that \hyperlink{classfl4cpp_1_1_node}{Node} can be deleted from Grapn A\+PI by the application. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{fl4cpp\+::\+Profile\+Node@{fl4cpp\+::\+Profile\+Node}!is\+Root\+Node@{is\+Root\+Node}}
+\index{is\+Root\+Node@{is\+Root\+Node}!fl4cpp\+::\+Profile\+Node@{fl4cpp\+::\+Profile\+Node}}
+\subsubsection[{\texorpdfstring{is\+Root\+Node() const }{isRootNode() const }}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool fl4cpp\+::\+Profile\+Node\+::is\+Root\+Node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classfl4cpp_1_1_profile_node_a7ea2fc3e1cb5054df96842737cb3d20a}{}\label{classfl4cpp_1_1_profile_node_a7ea2fc3e1cb5054df96842737cb3d20a}
+Tells if node is a Root node. All Profile nodes can be root nodes.
+
+W\+A\+R\+N\+I\+NG\+: N\+OT S\+U\+RE A\+B\+O\+UT Group and Event. !!!
+
+\begin{DoxyReturn}{Returns}
+True if node is Root node. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+F\+L4\+C\+P\+P/Profile\+Node.\+h\item 
+F\+L4\+C\+P\+P/Profile\+Node.\+cpp\end{DoxyCompactItemize}

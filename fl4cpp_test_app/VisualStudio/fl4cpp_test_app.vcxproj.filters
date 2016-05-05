@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header FIles">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header FIles\Networking">
+      <UniqueIdentifier>{54c97d15-d728-4fc0-acf1-f8963f404bff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header FIles\FL4CPP">
+      <UniqueIdentifier>{c09a3372-57df-44c9-8106-d6d369e5ceae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Jsoncpp">
+      <UniqueIdentifier>{5a7ac879-64c9-460f-9518-92349c9e82b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Uri-parser">
+      <UniqueIdentifier>{a48b9088-d1c2-4c4b-865f-33b2a54a4e9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Networking">
+      <UniqueIdentifier>{1acb5a2b-637f-4730-baae-bb7634989f5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\FL4CPP">
+      <UniqueIdentifier>{3c0d2807-dbe0-46d5-a4b1-ed9a989e0afa}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Jsoncpp\lib_json\json_batchallocator.h">
+      <Filter>Source Files\Jsoncpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Networking\EventEmitterImpl.h">
+      <Filter>Header FIles\Networking</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Networking\EventListener.h">
+      <Filter>Header FIles\Networking</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Networking\EventListenerImpl.h">
+      <Filter>Header FIles\Networking</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Networking\Exception.h">
+      <Filter>Header FIles\Networking</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Networking\HTTPRequest.h">
+      <Filter>Header FIles\Networking</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Networking\Types.h">
+      <Filter>Header FIles\Networking</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Networking\wxCURLConnectionEvent.h">
+      <Filter>Header FIles\Networking</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Networking\wxCURLConnectionEventPipe.h">
+      <Filter>Header FIles\Networking</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Networking\CURLConnection.h">
+      <Filter>Header FIles\Networking</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Networking\CURLConnectionListener.h">
+      <Filter>Header FIles\Networking</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Networking\EventEmitter.h">
+      <Filter>Header FIles\Networking</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FL4CPP\FL4CPP.h">
+      <Filter>Header FIles\FL4CPP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FL4CPP\PageNode.h">
+      <Filter>Header FIles\FL4CPP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FL4CPP\PhotoNode.h">
+      <Filter>Header FIles\FL4CPP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FL4CPP\PhotosEdge.h">
+      <Filter>Header FIles\FL4CPP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FL4CPP\Session.h">
+      <Filter>Header FIles\FL4CPP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FL4CPP\Settings.h">
+      <Filter>Header FIles\FL4CPP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FL4CPP\StatusesEdge.h">
+      <Filter>Header FIles\FL4CPP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FL4CPP\StatusNode.h">
+      <Filter>Header FIles\FL4CPP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FL4CPP\SyncHTTPRequest.h">
+      <Filter>Header FIles\FL4CPP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FL4CPP\UserNode.h">
+      <Filter>Header FIles\FL4CPP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FL4CPP\AccountsEdge.h">
+      <Filter>Header FIles\FL4CPP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FL4CPP\AlbumNode.h">
+      <Filter>Header FIles\FL4CPP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FL4CPP\AlbumsEdge.h">
+      <Filter>Header FIles\FL4CPP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FL4CPP\Edge.h">
+      <Filter>Header FIles\FL4CPP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FL4CPP\FeedEdge.h">
+      <Filter>Header FIles\FL4CPP</Filter>
+    </ClInclude>
+    <ClInclude Include="FLWxApp.h">
+      <Filter>Header FIles</Filter>
+    </ClInclude>
+    <ClInclude Include="FLMainWindowFrame.h">
+      <Filter>Header FIles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FL4CPP\CommonObjects.h">
+      <Filter>Header FIles\FL4CPP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FL4CPP\Helper.h">
+      <Filter>Header FIles\FL4CPP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FL4CPP\Node.h">
+      <Filter>Header FIles\FL4CPP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FL4CPP\PictureEdge.h">
+      <Filter>Header FIles\FL4CPP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FL4CPP\ProfileNode.h">
+      <Filter>Header FIles\FL4CPP</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Jsoncpp\lib_json\json_reader.cpp">
+      <Filter>Source Files\Jsoncpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Jsoncpp\lib_json\json_value.cpp">
+      <Filter>Source Files\Jsoncpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Jsoncpp\lib_json\json_writer.cpp">
+      <Filter>Source Files\Jsoncpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Uri-parser\UriCodec.cpp">
+      <Filter>Source Files\Uri-parser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Networking\CURLConnectionListener.cpp">
+      <Filter>Source Files\Networking</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Networking\Exception.cpp">
+      <Filter>Source Files\Networking</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Networking\HTTPRequest.cpp">
+      <Filter>Source Files\Networking</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Networking\wxCURLConnectionEvent.cpp">
+      <Filter>Source Files\Networking</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Networking\wxCURLConnectionEventPipe.cpp">
+      <Filter>Source Files\Networking</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Networking\CURLConnection.cpp">
+      <Filter>Source Files\Networking</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FL4CPP\Edge.cpp">
+      <Filter>Source Files\FL4CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FL4CPP\FeedEdge.cpp">
+      <Filter>Source Files\FL4CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FL4CPP\PageNode.cpp">
+      <Filter>Source Files\FL4CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FL4CPP\PhotoNode.cpp">
+      <Filter>Source Files\FL4CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FL4CPP\PhotosEdge.cpp">
+      <Filter>Source Files\FL4CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FL4CPP\Session.cpp">
+      <Filter>Source Files\FL4CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FL4CPP\Settings.cpp">
+      <Filter>Source Files\FL4CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FL4CPP\StatusesEdge.cpp">
+      <Filter>Source Files\FL4CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FL4CPP\StatusNode.cpp">
+      <Filter>Source Files\FL4CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FL4CPP\SyncHTTPRequest.cpp">
+      <Filter>Source Files\FL4CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FL4CPP\UserNode.cpp">
+      <Filter>Source Files\FL4CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FL4CPP\AccountsEdge.cpp">
+      <Filter>Source Files\FL4CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FL4CPP\AlbumNode.cpp">
+      <Filter>Source Files\FL4CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FL4CPP\AlbumsEdge.cpp">
+      <Filter>Source Files\FL4CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="FLWxApp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FLMainWindowFrame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FL4CPP\CommonObjects.cpp">
+      <Filter>Source Files\FL4CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FL4CPP\Node.cpp">
+      <Filter>Source Files\FL4CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FL4CPP\PictureEdge.cpp">
+      <Filter>Source Files\FL4CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FL4CPP\ProfileNode.cpp">
+      <Filter>Source Files\FL4CPP</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Jsoncpp\lib_json\json_internalarray.inl">
+      <Filter>Source Files\Jsoncpp</Filter>
+    </None>
+    <None Include="..\..\Jsoncpp\lib_json\json_internalmap.inl">
+      <Filter>Source Files\Jsoncpp</Filter>
+    </None>
+    <None Include="..\..\Jsoncpp\lib_json\json_valueiterator.inl">
+      <Filter>Source Files\Jsoncpp</Filter>
+    </None>
+  </ItemGroup>
+</Project>

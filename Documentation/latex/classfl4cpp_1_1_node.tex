@@ -1,0 +1,260 @@
+\hypertarget{classfl4cpp_1_1_node}{}\section{fl4cpp\+:\+:Node Class Reference}
+\label{classfl4cpp_1_1_node}\index{fl4cpp\+::\+Node@{fl4cpp\+::\+Node}}
+
+
+{\ttfamily \#include $<$Node.\+h$>$}
+
+Inheritance diagram for fl4cpp\+:\+:Node\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classfl4cpp_1_1_node}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classfl4cpp_1_1_node_a4281ba1ddb761144744fab305344a0cd}{Node} (\hyperlink{classfl4cpp_1_1_session}{Session} $\ast$session, \hyperlink{classfl4cpp_1_1_profile_node}{Profile\+Node} $\ast$root\+Node, std\+::string node\+Type, bool deletable)
+\item 
+bool \hyperlink{classfl4cpp_1_1_node_a1dd4594ffd7eb08e9e8c5031d2109a59}{init\+From\+Graph\+Api} (std\+::string node\+Id)
+\item 
+virtual bool \hyperlink{classfl4cpp_1_1_node_aac67098119277a58b66459323ea03d87}{init\+With\+Json} (Json\+::\+Value $\ast$node\+Data)
+\item 
+bool \hyperlink{classfl4cpp_1_1_node_a7198bd2f0274e750addddaed8aacd4ee}{refresh} ()
+\item 
+std\+::string \hyperlink{classfl4cpp_1_1_node_a283f934ebdc50976333da6f36415bd51}{get\+Node\+Type} () const 
+\item 
+bool \hyperlink{classfl4cpp_1_1_node_a22ae4a0c8b90b61722dfc6896c679f44}{delete\+From\+Graph\+Api} (std\+::string root\+Node\+Id)
+\item 
+virtual bool \hyperlink{classfl4cpp_1_1_node_a0895f61dd4fd8d5a9d9048c0c099b363}{Is\+Root\+Node} ()
+\item 
+std\+::string \hyperlink{classfl4cpp_1_1_node_a61fd6c329a140c7fcd641131ddc6f026}{get\+Node\+Id} () const 
+\item 
+void \hyperlink{classfl4cpp_1_1_node_a424501ee1ba680541b70218d8ac6ff8b}{set\+Node\+Id} (std\+::string node\+Id)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classfl4cpp_1_1_session}{Session} $\ast$ \hyperlink{classfl4cpp_1_1_node_a72051621dfa9fdfd5ed870e2e3e089a1}{get\+Session} () const 
+\item 
+\hyperlink{classfl4cpp_1_1_profile_node}{Profile\+Node} $\ast$ \hyperlink{classfl4cpp_1_1_node_a2eda6a3a1fe34bda85756436f76b1d12}{get\+Root\+Node} () const 
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \hyperlink{classfl4cpp_1_1_node_a6f464292d56bbf6cba4dd29f0591d932}{get\+Node\+From\+Graph\+Api} (\hyperlink{classfl4cpp_1_1_session}{Session} $\ast$session, \hyperlink{classfl4cpp_1_1_profile_node}{Profile\+Node} $\ast$root\+Node, std\+::string node\+Id, Json\+::\+Value $\ast$received\+Data, bool with\+Metadata, Json\+::\+Value $\ast$metadata)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Base class for all classes representing Graph Api nodes. See\+: \href{https://developers.facebook.com/docs/graph-api/quickstart/v2.0}{\tt https\+://developers.\+facebook.\+com/docs/graph-\/api/quickstart/v2.\+0}
+
+N\+O\+TE\+: Setter methods of the \hyperlink{classfl4cpp_1_1_node}{Node} class are used for initialization of the local copy, and has no affect on Graph Api copy. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{fl4cpp\+::\+Node@{fl4cpp\+::\+Node}!Node@{Node}}
+\index{Node@{Node}!fl4cpp\+::\+Node@{fl4cpp\+::\+Node}}
+\subsubsection[{\texorpdfstring{Node(\+Session $\ast$session, Profile\+Node $\ast$root\+Node, std\+::string node\+Type, bool deletable)}{Node(Session *session, ProfileNode *rootNode, std::string nodeType, bool deletable)}}]{\setlength{\rightskip}{0pt plus 5cm}Node\+::\+Node (
+\begin{DoxyParamCaption}
+\item[{{\bf Session} $\ast$}]{session, }
+\item[{{\bf Profile\+Node} $\ast$}]{root\+Node, }
+\item[{std\+::string}]{node\+Type, }
+\item[{bool}]{deletable}
+\end{DoxyParamCaption}
+)}\hypertarget{classfl4cpp_1_1_node_a4281ba1ddb761144744fab305344a0cd}{}\label{classfl4cpp_1_1_node_a4281ba1ddb761144744fab305344a0cd}
+Constructs \hyperlink{classfl4cpp_1_1_node}{Node} object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em session} & Pointer to a current \hyperlink{classfl4cpp_1_1_session}{Session}. \\
+\hline
+{\em root\+Node} & Pointer to a root node (Profile \hyperlink{classfl4cpp_1_1_node}{Node} on behalf of which all actions with this node will be performed). \\
+\hline
+{\em node\+Type} & \hyperlink{classfl4cpp_1_1_node}{Node} type string. \\
+\hline
+{\em deletable} & Tells that \hyperlink{classfl4cpp_1_1_node}{Node} can be deleted from Grapn A\+PI by the application. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{fl4cpp\+::\+Node@{fl4cpp\+::\+Node}!delete\+From\+Graph\+Api@{delete\+From\+Graph\+Api}}
+\index{delete\+From\+Graph\+Api@{delete\+From\+Graph\+Api}!fl4cpp\+::\+Node@{fl4cpp\+::\+Node}}
+\subsubsection[{\texorpdfstring{delete\+From\+Graph\+Api(std\+::string root\+Node\+Id)}{deleteFromGraphApi(std::string rootNodeId)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Node\+::delete\+From\+Graph\+Api (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{root\+Node\+Id}
+\end{DoxyParamCaption}
+)}\hypertarget{classfl4cpp_1_1_node_a22ae4a0c8b90b61722dfc6896c679f44}{}\label{classfl4cpp_1_1_node_a22ae4a0c8b90b61722dfc6896c679f44}
+Tries to delete node with current node id from Graph Api. Not all node types can be deleted. And more than that\+: application can only delete nodes that was created by this application.
+
+
+\begin{DoxyParams}{Parameters}
+{\em root\+Node\+Id} & \hyperlink{classfl4cpp_1_1_node}{Node} Id of a Profile \hyperlink{classfl4cpp_1_1_node}{Node} on behalf of which application tries to delete a node.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if node deleted successfully, otherwise -\/ false. 
+\end{DoxyReturn}
+\index{fl4cpp\+::\+Node@{fl4cpp\+::\+Node}!get\+Node\+From\+Graph\+Api@{get\+Node\+From\+Graph\+Api}}
+\index{get\+Node\+From\+Graph\+Api@{get\+Node\+From\+Graph\+Api}!fl4cpp\+::\+Node@{fl4cpp\+::\+Node}}
+\subsubsection[{\texorpdfstring{get\+Node\+From\+Graph\+Api(\+Session $\ast$session, Profile\+Node $\ast$root\+Node, std\+::string node\+Id, Json\+::\+Value $\ast$received\+Data, bool with\+Metadata, Json\+::\+Value $\ast$metadata)}{getNodeFromGraphApi(Session *session, ProfileNode *rootNode, std::string nodeId, Json::Value *receivedData, bool withMetadata, Json::Value *metadata)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Node\+::get\+Node\+From\+Graph\+Api (
+\begin{DoxyParamCaption}
+\item[{{\bf Session} $\ast$}]{session, }
+\item[{{\bf Profile\+Node} $\ast$}]{root\+Node, }
+\item[{std\+::string}]{node\+Id, }
+\item[{Json\+::\+Value $\ast$}]{received\+Data, }
+\item[{bool}]{with\+Metadata, }
+\item[{Json\+::\+Value $\ast$}]{metadata}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}\hypertarget{classfl4cpp_1_1_node_a6f464292d56bbf6cba4dd29f0591d932}{}\label{classfl4cpp_1_1_node_a6f464292d56bbf6cba4dd29f0591d932}
+Helper function that requests a specific node from the Graph Api, passing over fl4cpp classes hierarchy.
+
+
+\begin{DoxyParams}{Parameters}
+{\em session} & Pointer to a \hyperlink{classfl4cpp_1_1_session}{Session} object. \\
+\hline
+{\em root\+Node} & Pointer to a root node (Profile \hyperlink{classfl4cpp_1_1_node}{Node} on behalf of which all actions with this node will be performed). \\
+\hline
+{\em node\+Id} & \hyperlink{classfl4cpp_1_1_node}{Node} Id of desired node. \\
+\hline
+{\em received\+Data} & Pointer to a buffer for received data. \\
+\hline
+{\em wiht\+Meta\+Data} & If set to true -\/ functon requests node metadata as well. \\
+\hline
+{\em metadata} & \hyperlink{classfl4cpp_1_1_node}{Node} metadata (if it was requested).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if node data was received successfully, otherwise -\/ false. 
+\end{DoxyReturn}
+\index{fl4cpp\+::\+Node@{fl4cpp\+::\+Node}!get\+Node\+Id@{get\+Node\+Id}}
+\index{get\+Node\+Id@{get\+Node\+Id}!fl4cpp\+::\+Node@{fl4cpp\+::\+Node}}
+\subsubsection[{\texorpdfstring{get\+Node\+Id() const }{getNodeId() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string fl4cpp\+::\+Node\+::get\+Node\+Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classfl4cpp_1_1_node_a61fd6c329a140c7fcd641131ddc6f026}{}\label{classfl4cpp_1_1_node_a61fd6c329a140c7fcd641131ddc6f026}
+Gets \hyperlink{classfl4cpp_1_1_node}{Node} Id.
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classfl4cpp_1_1_node}{Node} Id string. 
+\end{DoxyReturn}
+\index{fl4cpp\+::\+Node@{fl4cpp\+::\+Node}!get\+Node\+Type@{get\+Node\+Type}}
+\index{get\+Node\+Type@{get\+Node\+Type}!fl4cpp\+::\+Node@{fl4cpp\+::\+Node}}
+\subsubsection[{\texorpdfstring{get\+Node\+Type() const }{getNodeType() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string fl4cpp\+::\+Node\+::get\+Node\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classfl4cpp_1_1_node_a283f934ebdc50976333da6f36415bd51}{}\label{classfl4cpp_1_1_node_a283f934ebdc50976333da6f36415bd51}
+Gets node type string.
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classfl4cpp_1_1_node}{Node} type. 
+\end{DoxyReturn}
+\index{fl4cpp\+::\+Node@{fl4cpp\+::\+Node}!get\+Root\+Node@{get\+Root\+Node}}
+\index{get\+Root\+Node@{get\+Root\+Node}!fl4cpp\+::\+Node@{fl4cpp\+::\+Node}}
+\subsubsection[{\texorpdfstring{get\+Root\+Node() const }{getRootNode() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Profile\+Node}$\ast$ fl4cpp\+::\+Node\+::get\+Root\+Node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\hypertarget{classfl4cpp_1_1_node_a2eda6a3a1fe34bda85756436f76b1d12}{}\label{classfl4cpp_1_1_node_a2eda6a3a1fe34bda85756436f76b1d12}
+Gets current root node.
+
+\begin{DoxyReturn}{Returns}
+Pointer to a root node. 
+\end{DoxyReturn}
+\index{fl4cpp\+::\+Node@{fl4cpp\+::\+Node}!get\+Session@{get\+Session}}
+\index{get\+Session@{get\+Session}!fl4cpp\+::\+Node@{fl4cpp\+::\+Node}}
+\subsubsection[{\texorpdfstring{get\+Session() const }{getSession() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Session}$\ast$ fl4cpp\+::\+Node\+::get\+Session (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\hypertarget{classfl4cpp_1_1_node_a72051621dfa9fdfd5ed870e2e3e089a1}{}\label{classfl4cpp_1_1_node_a72051621dfa9fdfd5ed870e2e3e089a1}
+Gets current \hyperlink{classfl4cpp_1_1_session}{Session} object.
+
+\begin{DoxyReturn}{Returns}
+Pointer to a \hyperlink{classfl4cpp_1_1_session}{Session} object. 
+\end{DoxyReturn}
+\index{fl4cpp\+::\+Node@{fl4cpp\+::\+Node}!init\+From\+Graph\+Api@{init\+From\+Graph\+Api}}
+\index{init\+From\+Graph\+Api@{init\+From\+Graph\+Api}!fl4cpp\+::\+Node@{fl4cpp\+::\+Node}}
+\subsubsection[{\texorpdfstring{init\+From\+Graph\+Api(std\+::string node\+Id)}{initFromGraphApi(std::string nodeId)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Node\+::init\+From\+Graph\+Api (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{node\+Id}
+\end{DoxyParamCaption}
+)}\hypertarget{classfl4cpp_1_1_node_a1dd4594ffd7eb08e9e8c5031d2109a59}{}\label{classfl4cpp_1_1_node_a1dd4594ffd7eb08e9e8c5031d2109a59}
+Requests \hyperlink{classfl4cpp_1_1_node}{Node} data from Graph Api and initializes \hyperlink{classfl4cpp_1_1_node}{Node} object with received Json data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em node\+Id} & \hyperlink{classfl4cpp_1_1_node}{Node} Id of the desired node.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if node data successfully received and node object initialized correctly, otherwise -\/ false. 
+\end{DoxyReturn}
+\index{fl4cpp\+::\+Node@{fl4cpp\+::\+Node}!init\+With\+Json@{init\+With\+Json}}
+\index{init\+With\+Json@{init\+With\+Json}!fl4cpp\+::\+Node@{fl4cpp\+::\+Node}}
+\subsubsection[{\texorpdfstring{init\+With\+Json(\+Json\+::\+Value $\ast$node\+Data)}{initWithJson(Json::Value *nodeData)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Node\+::init\+With\+Json (
+\begin{DoxyParamCaption}
+\item[{Json\+::\+Value $\ast$}]{node\+Data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classfl4cpp_1_1_node_aac67098119277a58b66459323ea03d87}{}\label{classfl4cpp_1_1_node_aac67098119277a58b66459323ea03d87}
+Initializes \hyperlink{classfl4cpp_1_1_node}{Node} object with Json data.
+
+Should be implemented in derived class, since nodes usually contain more fields than just \char`\"{}id\char`\"{}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em node\+Data} & Json object with \hyperlink{classfl4cpp_1_1_node}{Node} data, formatted as in usual response from Graph Api on requesting a particular node.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if node object initialized successfully, otherwise -\/ false. 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{classfl4cpp_1_1_user_node_aceffa0d69285709d123b72b3e980e586}{fl4cpp\+::\+User\+Node}, \hyperlink{classfl4cpp_1_1_photo_node_a02098c1a11f5596007793f13228a4054}{fl4cpp\+::\+Photo\+Node}, \hyperlink{classfl4cpp_1_1_album_node_a175f018c63cf412b4e93e4a3b452791d}{fl4cpp\+::\+Album\+Node}, \hyperlink{classfl4cpp_1_1_status_node_aa99586c53782cfedd1f7d21e3508c20c}{fl4cpp\+::\+Status\+Node}, and \hyperlink{classfl4cpp_1_1_page_node_a392ad09e7602c9dd957e2ff1216c7e41}{fl4cpp\+::\+Page\+Node}.
+
+\index{fl4cpp\+::\+Node@{fl4cpp\+::\+Node}!Is\+Root\+Node@{Is\+Root\+Node}}
+\index{Is\+Root\+Node@{Is\+Root\+Node}!fl4cpp\+::\+Node@{fl4cpp\+::\+Node}}
+\subsubsection[{\texorpdfstring{Is\+Root\+Node()}{IsRootNode()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool fl4cpp\+::\+Node\+::\+Is\+Root\+Node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classfl4cpp_1_1_node_a0895f61dd4fd8d5a9d9048c0c099b363}{}\label{classfl4cpp_1_1_node_a0895f61dd4fd8d5a9d9048c0c099b363}
+Tells if node is a root node. By default only a Profile \hyperlink{classfl4cpp_1_1_node}{Node} can be a root one.
+
+\begin{DoxyReturn}{Returns}
+Returns true if root and false if not. 
+\end{DoxyReturn}
+\index{fl4cpp\+::\+Node@{fl4cpp\+::\+Node}!refresh@{refresh}}
+\index{refresh@{refresh}!fl4cpp\+::\+Node@{fl4cpp\+::\+Node}}
+\subsubsection[{\texorpdfstring{refresh()}{refresh()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Node\+::refresh (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classfl4cpp_1_1_node_a7198bd2f0274e750addddaed8aacd4ee}{}\label{classfl4cpp_1_1_node_a7198bd2f0274e750addddaed8aacd4ee}
+Requests \hyperlink{classfl4cpp_1_1_node}{Node} data from Graph Api for \hyperlink{classfl4cpp_1_1_node}{Node} with current node id.
+
+\begin{DoxyReturn}{Returns}
+Returns true if node data successfully received and node object initialized correctly, otherwise -\/ false. 
+\end{DoxyReturn}
+\index{fl4cpp\+::\+Node@{fl4cpp\+::\+Node}!set\+Node\+Id@{set\+Node\+Id}}
+\index{set\+Node\+Id@{set\+Node\+Id}!fl4cpp\+::\+Node@{fl4cpp\+::\+Node}}
+\subsubsection[{\texorpdfstring{set\+Node\+Id(std\+::string node\+Id)}{setNodeId(std::string nodeId)}}]{\setlength{\rightskip}{0pt plus 5cm}void fl4cpp\+::\+Node\+::set\+Node\+Id (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{node\+Id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classfl4cpp_1_1_node_a424501ee1ba680541b70218d8ac6ff8b}{}\label{classfl4cpp_1_1_node_a424501ee1ba680541b70218d8ac6ff8b}
+Sets \hyperlink{classfl4cpp_1_1_node}{Node} Id.
+
+
+\begin{DoxyParams}{Parameters}
+{\em node\+Id} & \hyperlink{classfl4cpp_1_1_node}{Node} Id string. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+F\+L4\+C\+P\+P/Node.\+h\item 
+F\+L4\+C\+P\+P/Node.\+cpp\end{DoxyCompactItemize}

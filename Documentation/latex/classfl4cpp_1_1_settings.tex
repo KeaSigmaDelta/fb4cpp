@@ -1,0 +1,129 @@
+\hypertarget{classfl4cpp_1_1_settings}{}\section{fl4cpp\+:\+:Settings Class Reference}
+\label{classfl4cpp_1_1_settings}\index{fl4cpp\+::\+Settings@{fl4cpp\+::\+Settings}}
+
+
+{\ttfamily \#include $<$Settings.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{classfl4cpp_1_1_settings_a8963742d36c492133f81eeb47746e7ce}{get\+User\+Agent} () const 
+\item 
+void \hyperlink{classfl4cpp_1_1_settings_ae242d37ee4727b2c1c5d8f1373d82dba}{set\+User\+Agent} (std\+::string user\+Agent)
+\item 
+std\+::string \hyperlink{classfl4cpp_1_1_settings_ad78c98110ae7adaad90728fcfdf6a270}{get\+Graph\+Api\+Url} () const 
+\item 
+void \hyperlink{classfl4cpp_1_1_settings_a5ed2b99d47190be729265a28a039f783}{set\+Graph\+Api\+Url} (std\+::string graph\+Api\+Url)
+\item 
+std\+::string \hyperlink{classfl4cpp_1_1_settings_aeea7ea9a2b474bfbd206d59ef4860a58}{get\+App\+Id} () const 
+\item 
+void \hyperlink{classfl4cpp_1_1_settings_ad0cef2a72b32d3243c6d031d6dc81958}{set\+App\+Id} (std\+::string app\+Id)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classfl4cpp_1_1_settings}{Settings} $\ast$ \hyperlink{classfl4cpp_1_1_settings_acb4e714f183c229cac9c65074b69ca48}{shared} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains string values which is used by fl4cpp library for interaction with facebook Graph A\+PI.
+
+App Id value should be set by the programmer before using any \hyperlink{classfl4cpp_1_1_session}{Session} class methods.
+
+User Agent value depends on which browser engine is used for a login sequence.
+
+Graph Api U\+RL should keep its default value, unless Facebook changes its api. 
+
+\subsection{Member Function Documentation}
+\index{fl4cpp\+::\+Settings@{fl4cpp\+::\+Settings}!get\+App\+Id@{get\+App\+Id}}
+\index{get\+App\+Id@{get\+App\+Id}!fl4cpp\+::\+Settings@{fl4cpp\+::\+Settings}}
+\subsubsection[{\texorpdfstring{get\+App\+Id() const }{getAppId() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string fl4cpp\+::\+Settings\+::get\+App\+Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classfl4cpp_1_1_settings_aeea7ea9a2b474bfbd206d59ef4860a58}{}\label{classfl4cpp_1_1_settings_aeea7ea9a2b474bfbd206d59ef4860a58}
+Gets current App Id.
+
+\begin{DoxyReturn}{Returns}
+App Id string. 
+\end{DoxyReturn}
+\index{fl4cpp\+::\+Settings@{fl4cpp\+::\+Settings}!get\+Graph\+Api\+Url@{get\+Graph\+Api\+Url}}
+\index{get\+Graph\+Api\+Url@{get\+Graph\+Api\+Url}!fl4cpp\+::\+Settings@{fl4cpp\+::\+Settings}}
+\subsubsection[{\texorpdfstring{get\+Graph\+Api\+Url() const }{getGraphApiUrl() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string fl4cpp\+::\+Settings\+::get\+Graph\+Api\+Url (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classfl4cpp_1_1_settings_ad78c98110ae7adaad90728fcfdf6a270}{}\label{classfl4cpp_1_1_settings_ad78c98110ae7adaad90728fcfdf6a270}
+Gets current Graph Api U\+RL.
+
+\begin{DoxyReturn}{Returns}
+Graph Api U\+RL string. 
+\end{DoxyReturn}
+\index{fl4cpp\+::\+Settings@{fl4cpp\+::\+Settings}!get\+User\+Agent@{get\+User\+Agent}}
+\index{get\+User\+Agent@{get\+User\+Agent}!fl4cpp\+::\+Settings@{fl4cpp\+::\+Settings}}
+\subsubsection[{\texorpdfstring{get\+User\+Agent() const }{getUserAgent() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string fl4cpp\+::\+Settings\+::get\+User\+Agent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classfl4cpp_1_1_settings_a8963742d36c492133f81eeb47746e7ce}{}\label{classfl4cpp_1_1_settings_a8963742d36c492133f81eeb47746e7ce}
+Gets current User Agent.
+
+\begin{DoxyReturn}{Returns}
+User Agent string. 
+\end{DoxyReturn}
+\index{fl4cpp\+::\+Settings@{fl4cpp\+::\+Settings}!set\+App\+Id@{set\+App\+Id}}
+\index{set\+App\+Id@{set\+App\+Id}!fl4cpp\+::\+Settings@{fl4cpp\+::\+Settings}}
+\subsubsection[{\texorpdfstring{set\+App\+Id(std\+::string app\+Id)}{setAppId(std::string appId)}}]{\setlength{\rightskip}{0pt plus 5cm}void fl4cpp\+::\+Settings\+::set\+App\+Id (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{app\+Id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classfl4cpp_1_1_settings_ad0cef2a72b32d3243c6d031d6dc81958}{}\label{classfl4cpp_1_1_settings_ad0cef2a72b32d3243c6d031d6dc81958}
+Sets current App Id.
+
+
+\begin{DoxyParams}{Parameters}
+{\em app\+Id} & App Id string. \\
+\hline
+\end{DoxyParams}
+\index{fl4cpp\+::\+Settings@{fl4cpp\+::\+Settings}!set\+Graph\+Api\+Url@{set\+Graph\+Api\+Url}}
+\index{set\+Graph\+Api\+Url@{set\+Graph\+Api\+Url}!fl4cpp\+::\+Settings@{fl4cpp\+::\+Settings}}
+\subsubsection[{\texorpdfstring{set\+Graph\+Api\+Url(std\+::string graph\+Api\+Url)}{setGraphApiUrl(std::string graphApiUrl)}}]{\setlength{\rightskip}{0pt plus 5cm}void fl4cpp\+::\+Settings\+::set\+Graph\+Api\+Url (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{graph\+Api\+Url}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classfl4cpp_1_1_settings_a5ed2b99d47190be729265a28a039f783}{}\label{classfl4cpp_1_1_settings_a5ed2b99d47190be729265a28a039f783}
+Sets current Graph Api U\+RL.
+
+
+\begin{DoxyParams}{Parameters}
+{\em graph\+Api\+Url} & Graph Api U\+RL string. \\
+\hline
+\end{DoxyParams}
+\index{fl4cpp\+::\+Settings@{fl4cpp\+::\+Settings}!set\+User\+Agent@{set\+User\+Agent}}
+\index{set\+User\+Agent@{set\+User\+Agent}!fl4cpp\+::\+Settings@{fl4cpp\+::\+Settings}}
+\subsubsection[{\texorpdfstring{set\+User\+Agent(std\+::string user\+Agent)}{setUserAgent(std::string userAgent)}}]{\setlength{\rightskip}{0pt plus 5cm}void fl4cpp\+::\+Settings\+::set\+User\+Agent (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{user\+Agent}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classfl4cpp_1_1_settings_ae242d37ee4727b2c1c5d8f1373d82dba}{}\label{classfl4cpp_1_1_settings_ae242d37ee4727b2c1c5d8f1373d82dba}
+Sets current User Agent.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Agent} & User Agent string. \\
+\hline
+\end{DoxyParams}
+\index{fl4cpp\+::\+Settings@{fl4cpp\+::\+Settings}!shared@{shared}}
+\index{shared@{shared}!fl4cpp\+::\+Settings@{fl4cpp\+::\+Settings}}
+\subsubsection[{\texorpdfstring{shared()}{shared()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Settings} $\ast$ Settings\+::shared (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classfl4cpp_1_1_settings_acb4e714f183c229cac9c65074b69ca48}{}\label{classfl4cpp_1_1_settings_acb4e714f183c229cac9c65074b69ca48}
+Provides a pointer to a \hyperlink{classfl4cpp_1_1_settings}{Settings} singleton. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+F\+L4\+C\+P\+P/Settings.\+h\item 
+F\+L4\+C\+P\+P/Settings.\+cpp\end{DoxyCompactItemize}

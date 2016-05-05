@@ -1,0 +1,90 @@
+\hypertarget{classfl4cpp_1_1_accounts_edge}{}\section{fl4cpp\+:\+:Accounts\+Edge Class Reference}
+\label{classfl4cpp_1_1_accounts_edge}\index{fl4cpp\+::\+Accounts\+Edge@{fl4cpp\+::\+Accounts\+Edge}}
+
+
+{\ttfamily \#include $<$Accounts\+Edge.\+h$>$}
+
+Inheritance diagram for fl4cpp\+:\+:Accounts\+Edge\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classfl4cpp_1_1_accounts_edge}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classfl4cpp_1_1_accounts_edge_afea96e7a199151fd308c550e91900043}{Accounts\+Edge} (\hyperlink{classfl4cpp_1_1_session}{Session} $\ast$session, \hyperlink{classfl4cpp_1_1_node}{Node} $\ast$owner\+Node, \hyperlink{classfl4cpp_1_1_profile_node}{Profile\+Node} $\ast$root\+Node)
+\item 
+virtual bool \hyperlink{classfl4cpp_1_1_accounts_edge_aa7efb829333e417c3fb5c93b4c1cb9b5}{init\+With\+Json} (Json\+::\+Value $\ast$edge\+Data)
+\item 
+std\+::vector$<$ \hyperlink{classfl4cpp_1_1_page_node}{Page\+Node} $\ast$ $>$ $\ast$ \hyperlink{classfl4cpp_1_1_accounts_edge_a7c386e9d480d1438d699903dc0a56e90}{get\+Page\+Nodes} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Represents Accounts \hyperlink{classfl4cpp_1_1_edge}{Edge} of the facebook Graph Api. You can find detailed description of functions and fields of this edge in the Graph Api documentation. See\+: \href{https://developers.facebook.com/docs/graph-api/reference/v2.0/user/accounts/}{\tt https\+://developers.\+facebook.\+com/docs/graph-\/api/reference/v2.\+0/user/accounts/} 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{fl4cpp\+::\+Accounts\+Edge@{fl4cpp\+::\+Accounts\+Edge}!Accounts\+Edge@{Accounts\+Edge}}
+\index{Accounts\+Edge@{Accounts\+Edge}!fl4cpp\+::\+Accounts\+Edge@{fl4cpp\+::\+Accounts\+Edge}}
+\subsubsection[{\texorpdfstring{Accounts\+Edge(\+Session $\ast$session, Node $\ast$owner\+Node, Profile\+Node $\ast$root\+Node)}{AccountsEdge(Session *session, Node *ownerNode, ProfileNode *rootNode)}}]{\setlength{\rightskip}{0pt plus 5cm}Accounts\+Edge\+::\+Accounts\+Edge (
+\begin{DoxyParamCaption}
+\item[{{\bf Session} $\ast$}]{session, }
+\item[{{\bf Node} $\ast$}]{owner\+Node, }
+\item[{{\bf Profile\+Node} $\ast$}]{root\+Node}
+\end{DoxyParamCaption}
+)}\hypertarget{classfl4cpp_1_1_accounts_edge_afea96e7a199151fd308c550e91900043}{}\label{classfl4cpp_1_1_accounts_edge_afea96e7a199151fd308c550e91900043}
+Constructs \hyperlink{classfl4cpp_1_1_accounts_edge}{Accounts\+Edge} object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em session} & Pointer to a current session. \\
+\hline
+{\em owner\+Node} & Pointer to a node that hold this edge. \\
+\hline
+{\em root\+Node} & Pointer to a root node (Profile \hyperlink{classfl4cpp_1_1_node}{Node} on behalf of which all actions with this edge will be performed). \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{fl4cpp\+::\+Accounts\+Edge@{fl4cpp\+::\+Accounts\+Edge}!get\+Page\+Nodes@{get\+Page\+Nodes}}
+\index{get\+Page\+Nodes@{get\+Page\+Nodes}!fl4cpp\+::\+Accounts\+Edge@{fl4cpp\+::\+Accounts\+Edge}}
+\subsubsection[{\texorpdfstring{get\+Page\+Nodes()}{getPageNodes()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ {\bf Page\+Node}$\ast$ $>$$\ast$ fl4cpp\+::\+Accounts\+Edge\+::get\+Page\+Nodes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classfl4cpp_1_1_accounts_edge_a7c386e9d480d1438d699903dc0a56e90}{}\label{classfl4cpp_1_1_accounts_edge_a7c386e9d480d1438d699903dc0a56e90}
+Gets page nodes of this Profile \hyperlink{classfl4cpp_1_1_node}{Node}.
+
+\begin{DoxyReturn}{Returns}
+Pointer to a list of pointers to Page \hyperlink{classfl4cpp_1_1_node}{Node} objects. 
+\end{DoxyReturn}
+\index{fl4cpp\+::\+Accounts\+Edge@{fl4cpp\+::\+Accounts\+Edge}!init\+With\+Json@{init\+With\+Json}}
+\index{init\+With\+Json@{init\+With\+Json}!fl4cpp\+::\+Accounts\+Edge@{fl4cpp\+::\+Accounts\+Edge}}
+\subsubsection[{\texorpdfstring{init\+With\+Json(\+Json\+::\+Value $\ast$edge\+Data)}{initWithJson(Json::Value *edgeData)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Accounts\+Edge\+::init\+With\+Json (
+\begin{DoxyParamCaption}
+\item[{Json\+::\+Value $\ast$}]{edge\+Data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classfl4cpp_1_1_accounts_edge_aa7efb829333e417c3fb5c93b4c1cb9b5}{}\label{classfl4cpp_1_1_accounts_edge_aa7efb829333e417c3fb5c93b4c1cb9b5}
+Initializes \hyperlink{classfl4cpp_1_1_edge}{Edge} object with Json data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em edge\+Data} & Json object with \hyperlink{classfl4cpp_1_1_edge}{Edge} data, formatted as in usual response from Graph Api on requesting a particular edge.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if edge object initialized successfully, otherwise -\/ false. 
+\end{DoxyReturn}
+we should redownload the page node beacuse accounts edge doesn\textquotesingle{}t return all available fields. 
+
+Reimplemented from \hyperlink{classfl4cpp_1_1_edge_a27d724789467572a7deb2cabad784f81}{fl4cpp\+::\+Edge}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+F\+L4\+C\+P\+P/Accounts\+Edge.\+h\item 
+F\+L4\+C\+P\+P/Accounts\+Edge.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,179 @@
+\hypertarget{classfl4cpp_1_1_session}{}\section{fl4cpp\+:\+:Session Class Reference}
+\label{classfl4cpp_1_1_session}\index{fl4cpp\+::\+Session@{fl4cpp\+::\+Session}}
+
+
+{\ttfamily \#include $<$Session.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classfl4cpp_1_1_session_ad92ef09b872c9227e38a6efdd4d8a837}{Session} ()
+\item 
+std\+::string \hyperlink{classfl4cpp_1_1_session_a2306590848980a36ba37c1bbaf9cec34}{get\+Access\+Token} () const 
+\item 
+void \hyperlink{classfl4cpp_1_1_session_a19916b956cfbe9e4ec5552c959727842}{set\+Access\+Token} (std\+::string access\+Token, unsigned int expires\+In)
+\item 
+std\+::string \hyperlink{classfl4cpp_1_1_session_a4c8ad57a344f675942f3cf1bb99da7a2}{get\+Page\+Access\+Token} (std\+::string page\+Node\+Id)
+\item 
+void \hyperlink{classfl4cpp_1_1_session_abdee749e972ecbc8e33608a78e181ae6}{update\+Page\+Access\+Tokens} ()
+\item 
+void \hyperlink{classfl4cpp_1_1_session_a509344933d13b0194a78d28f657c824a}{register\+Observer} (\hyperlink{classfl4cpp_1_1_session_observer}{Session\+Observer} $\ast$observer)
+\item 
+void \hyperlink{classfl4cpp_1_1_session_ab2ea95f999ce4c29f89dcad98a5ea33c}{unregister\+Observer} (\hyperlink{classfl4cpp_1_1_session_observer}{Session\+Observer} $\ast$observer)
+\item 
+bool \hyperlink{classfl4cpp_1_1_session_ab8a9cd8497527ae62470cba1d03cae4b}{get\+Login\+Page} (std\+::string $\ast$received\+Data, std\+::vector$<$ std\+::string $>$ $\ast$permissions)
+\item 
+\hyperlink{classfl4cpp_1_1_user_node}{User\+Node} $\ast$ \hyperlink{classfl4cpp_1_1_session_aa77c71557a3846ef944004e7524fa41e}{get\+Current\+User\+Node} (bool init\+From\+Graph\+Api=true)
+\item 
+void \hyperlink{classfl4cpp_1_1_session_ab36eeec3e87afdac72b0df63704a3fbd}{logout} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Core class that is used for initiating Facebook Login sequence and retrieving User \hyperlink{classfl4cpp_1_1_node}{Node} of a logged in user. Before retrieving a User \hyperlink{classfl4cpp_1_1_node}{Node} -\/ \hyperlink{classfl4cpp_1_1_session}{Session} should be provided with a User Access Token that is achieved during login sequence. All network-\/related methods of this class and all other fl4cpp clases work in a blocking manner, so it is better to run them in a thread other than UI.
+
+How to use\+: 1) Set App Id in \hyperlink{classfl4cpp_1_1_settings}{Settings} singleton 2) Call get\+Login\+Page with required permissions list. More on permissions here\+: \href{https://developers.facebook.com/docs/facebook-login/permissions/v2.0}{\tt https\+://developers.\+facebook.\+com/docs/facebook-\/login/permissions/v2.\+0} 3) Open received web page data in a browser. 4) Wait for user to accept requested permissions and complete Login sequence. 5) Upon completion -\/ facebook will send you a User Access Token. 6) Call set\+Access\+Token with that token as an argument. 7) Call get\+User\+Node to get the User \hyperlink{classfl4cpp_1_1_node}{Node} of a current user.
+
+For a better understanding of the Facebook Login Sequence flow read the following doc\+: \href{https://developers.facebook.com/docs/facebook-login/manually-build-a-login-flow/v2.0}{\tt https\+://developers.\+facebook.\+com/docs/facebook-\/login/manually-\/build-\/a-\/login-\/flow/v2.\+0} 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{fl4cpp\+::\+Session@{fl4cpp\+::\+Session}!Session@{Session}}
+\index{Session@{Session}!fl4cpp\+::\+Session@{fl4cpp\+::\+Session}}
+\subsubsection[{\texorpdfstring{Session()}{Session()}}]{\setlength{\rightskip}{0pt plus 5cm}Session\+::\+Session (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classfl4cpp_1_1_session_ad92ef09b872c9227e38a6efdd4d8a837}{}\label{classfl4cpp_1_1_session_ad92ef09b872c9227e38a6efdd4d8a837}
+Constructs \hyperlink{classfl4cpp_1_1_session}{Session} object. 
+
+\subsection{Member Function Documentation}
+\index{fl4cpp\+::\+Session@{fl4cpp\+::\+Session}!get\+Access\+Token@{get\+Access\+Token}}
+\index{get\+Access\+Token@{get\+Access\+Token}!fl4cpp\+::\+Session@{fl4cpp\+::\+Session}}
+\subsubsection[{\texorpdfstring{get\+Access\+Token() const }{getAccessToken() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string fl4cpp\+::\+Session\+::get\+Access\+Token (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classfl4cpp_1_1_session_a2306590848980a36ba37c1bbaf9cec34}{}\label{classfl4cpp_1_1_session_a2306590848980a36ba37c1bbaf9cec34}
+Gets current User Access Token.
+
+\begin{DoxyReturn}{Returns}
+User Access Token. 
+\end{DoxyReturn}
+\index{fl4cpp\+::\+Session@{fl4cpp\+::\+Session}!get\+Current\+User\+Node@{get\+Current\+User\+Node}}
+\index{get\+Current\+User\+Node@{get\+Current\+User\+Node}!fl4cpp\+::\+Session@{fl4cpp\+::\+Session}}
+\subsubsection[{\texorpdfstring{get\+Current\+User\+Node(bool init\+From\+Graph\+Api=true)}{getCurrentUserNode(bool initFromGraphApi=true)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf User\+Node} $\ast$ Session\+::get\+Current\+User\+Node (
+\begin{DoxyParamCaption}
+\item[{bool}]{init\+From\+Graph\+Api = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}\hypertarget{classfl4cpp_1_1_session_aa77c71557a3846ef944004e7524fa41e}{}\label{classfl4cpp_1_1_session_aa77c71557a3846ef944004e7524fa41e}
+Requests a \hyperlink{classfl4cpp_1_1_node}{Node} of a logged in user. Received \hyperlink{classfl4cpp_1_1_node}{Node} data is saved in \+\_\+current\+User\+Node class member.
+
+
+\begin{DoxyParams}{Parameters}
+{\em init\+From\+Graph\+Api} & flag, that if set to false will result in returning a pointer to the local copy of User \hyperlink{classfl4cpp_1_1_node}{Node} without sending a request to a Facebook server.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pointer to a local copy of User \hyperlink{classfl4cpp_1_1_node}{Node}. 
+\end{DoxyReturn}
+\index{fl4cpp\+::\+Session@{fl4cpp\+::\+Session}!get\+Login\+Page@{get\+Login\+Page}}
+\index{get\+Login\+Page@{get\+Login\+Page}!fl4cpp\+::\+Session@{fl4cpp\+::\+Session}}
+\subsubsection[{\texorpdfstring{get\+Login\+Page(std\+::string $\ast$received\+Data, std\+::vector$<$ std\+::string $>$ $\ast$permissions)}{getLoginPage(std::string *receivedData, std::vector< std::string > *permissions)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Session\+::get\+Login\+Page (
+\begin{DoxyParamCaption}
+\item[{std\+::string $\ast$}]{received\+Data, }
+\item[{std\+::vector$<$ std\+::string $>$ $\ast$}]{permissions}
+\end{DoxyParamCaption}
+)}\hypertarget{classfl4cpp_1_1_session_ab8a9cd8497527ae62470cba1d03cae4b}{}\label{classfl4cpp_1_1_session_ab8a9cd8497527ae62470cba1d03cae4b}
+Requests a Login Page data from Facebook with the list of permissions required for operations that main program wants to execute. Received data is affected by the User Agent setting (see \hyperlink{classfl4cpp_1_1_settings}{Settings} singleton), so make sure that your browser support all features of a given User Agent.
+
+
+\begin{DoxyParams}{Parameters}
+{\em received\+Data} & Login Page html data. \\
+\hline
+{\em permissions} & pointer to a list of desired permissions. \\
+\hline
+\end{DoxyParams}
+\index{fl4cpp\+::\+Session@{fl4cpp\+::\+Session}!get\+Page\+Access\+Token@{get\+Page\+Access\+Token}}
+\index{get\+Page\+Access\+Token@{get\+Page\+Access\+Token}!fl4cpp\+::\+Session@{fl4cpp\+::\+Session}}
+\subsubsection[{\texorpdfstring{get\+Page\+Access\+Token(std\+::string page\+Node\+Id)}{getPageAccessToken(std::string pageNodeId)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Session\+::get\+Page\+Access\+Token (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{page\+Node\+Id}
+\end{DoxyParamCaption}
+)}\hypertarget{classfl4cpp_1_1_session_a4c8ad57a344f675942f3cf1bb99da7a2}{}\label{classfl4cpp_1_1_session_a4c8ad57a344f675942f3cf1bb99da7a2}
+Gets a Page Access Token for a Facebook Page by its \hyperlink{classfl4cpp_1_1_node}{Node} Id.
+
+
+\begin{DoxyParams}{Parameters}
+{\em page\+Node\+Id} & \hyperlink{classfl4cpp_1_1_node}{Node} Id of the desired page.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Access Token string or empty string if user has no admin rights for this page. 
+\end{DoxyReturn}
+\index{fl4cpp\+::\+Session@{fl4cpp\+::\+Session}!logout@{logout}}
+\index{logout@{logout}!fl4cpp\+::\+Session@{fl4cpp\+::\+Session}}
+\subsubsection[{\texorpdfstring{logout()}{logout()}}]{\setlength{\rightskip}{0pt plus 5cm}void Session\+::logout (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classfl4cpp_1_1_session_ab36eeec3e87afdac72b0df63704a3fbd}{}\label{classfl4cpp_1_1_session_ab36eeec3e87afdac72b0df63704a3fbd}
+Invalidates current User Access Token and all its Page Accesss Tokens. \index{fl4cpp\+::\+Session@{fl4cpp\+::\+Session}!register\+Observer@{register\+Observer}}
+\index{register\+Observer@{register\+Observer}!fl4cpp\+::\+Session@{fl4cpp\+::\+Session}}
+\subsubsection[{\texorpdfstring{register\+Observer(\+Session\+Observer $\ast$observer)}{registerObserver(SessionObserver *observer)}}]{\setlength{\rightskip}{0pt plus 5cm}void Session\+::register\+Observer (
+\begin{DoxyParamCaption}
+\item[{{\bf Session\+Observer} $\ast$}]{observer}
+\end{DoxyParamCaption}
+)}\hypertarget{classfl4cpp_1_1_session_a509344933d13b0194a78d28f657c824a}{}\label{classfl4cpp_1_1_session_a509344933d13b0194a78d28f657c824a}
+Registers a \hyperlink{classfl4cpp_1_1_session_observer}{Session\+Observer} object, that will be notified when current User Access Token expires.
+
+
+\begin{DoxyParams}{Parameters}
+{\em observer} & pointer to a \hyperlink{classfl4cpp_1_1_session_observer}{Session\+Observer} object. \\
+\hline
+\end{DoxyParams}
+\index{fl4cpp\+::\+Session@{fl4cpp\+::\+Session}!set\+Access\+Token@{set\+Access\+Token}}
+\index{set\+Access\+Token@{set\+Access\+Token}!fl4cpp\+::\+Session@{fl4cpp\+::\+Session}}
+\subsubsection[{\texorpdfstring{set\+Access\+Token(std\+::string access\+Token, unsigned int expires\+In)}{setAccessToken(std::string accessToken, unsigned int expiresIn)}}]{\setlength{\rightskip}{0pt plus 5cm}void Session\+::set\+Access\+Token (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{access\+Token, }
+\item[{unsigned int}]{expires\+In}
+\end{DoxyParamCaption}
+)}\hypertarget{classfl4cpp_1_1_session_a19916b956cfbe9e4ec5552c959727842}{}\label{classfl4cpp_1_1_session_a19916b956cfbe9e4ec5552c959727842}
+Sets User Access Token and requests access tokens for all Facebook Pages which current user has administrator access for.
+
+
+\begin{DoxyParams}{Parameters}
+{\em access\+Token} & User Access Token. \\
+\hline
+{\em expires\+In} & time in seconds before this token will expire (provided by Facebook in pair with Access Token). \\
+\hline
+\end{DoxyParams}
+\index{fl4cpp\+::\+Session@{fl4cpp\+::\+Session}!unregister\+Observer@{unregister\+Observer}}
+\index{unregister\+Observer@{unregister\+Observer}!fl4cpp\+::\+Session@{fl4cpp\+::\+Session}}
+\subsubsection[{\texorpdfstring{unregister\+Observer(\+Session\+Observer $\ast$observer)}{unregisterObserver(SessionObserver *observer)}}]{\setlength{\rightskip}{0pt plus 5cm}void Session\+::unregister\+Observer (
+\begin{DoxyParamCaption}
+\item[{{\bf Session\+Observer} $\ast$}]{observer}
+\end{DoxyParamCaption}
+)}\hypertarget{classfl4cpp_1_1_session_ab2ea95f999ce4c29f89dcad98a5ea33c}{}\label{classfl4cpp_1_1_session_ab2ea95f999ce4c29f89dcad98a5ea33c}
+Unregisters a \hyperlink{classfl4cpp_1_1_session_observer}{Session\+Observer} object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pointer} & to a \hyperlink{classfl4cpp_1_1_session_observer}{Session\+Observer} object. \\
+\hline
+\end{DoxyParams}
+\index{fl4cpp\+::\+Session@{fl4cpp\+::\+Session}!update\+Page\+Access\+Tokens@{update\+Page\+Access\+Tokens}}
+\index{update\+Page\+Access\+Tokens@{update\+Page\+Access\+Tokens}!fl4cpp\+::\+Session@{fl4cpp\+::\+Session}}
+\subsubsection[{\texorpdfstring{update\+Page\+Access\+Tokens()}{updatePageAccessTokens()}}]{\setlength{\rightskip}{0pt plus 5cm}void Session\+::update\+Page\+Access\+Tokens (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classfl4cpp_1_1_session_abdee749e972ecbc8e33608a78e181ae6}{}\label{classfl4cpp_1_1_session_abdee749e972ecbc8e33608a78e181ae6}
+Requests access tokens for all Facebook Pages which current user has administrator access for.
+
+Called automatically on set\+Access\+Token call. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+F\+L4\+C\+P\+P/Session.\+h\item 
+F\+L4\+C\+P\+P/Session.\+cpp\end{DoxyCompactItemize}

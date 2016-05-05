@@ -1,0 +1,50 @@
+\hypertarget{classfl4cpp_1_1_profile_node_builder}{}\section{fl4cpp\+:\+:Profile\+Node\+Builder Class Reference}
+\label{classfl4cpp_1_1_profile_node_builder}\index{fl4cpp\+::\+Profile\+Node\+Builder@{fl4cpp\+::\+Profile\+Node\+Builder}}
+
+
+{\ttfamily \#include $<$Profile\+Node.\+h$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classfl4cpp_1_1_profile_node}{Profile\+Node} $\ast$ \hyperlink{classfl4cpp_1_1_profile_node_builder_a72df89a17997f581256b29fc2d525beb}{build} (\hyperlink{classfl4cpp_1_1_session}{Session} $\ast$session, Json\+::\+Value $\ast$node\+Data, Json\+::\+Value $\ast$node\+Metadata)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Helper class that creates Profile \hyperlink{classfl4cpp_1_1_node}{Node} based on metadata received from Graph A\+PI.
+
+Sometimes Graph A\+PI gives you full Profile node data, but dont tells which Profile node it is (User or a Page...). So you have to request metadata explicitly and parse node data in concordance with it. 
+
+\subsection{Member Function Documentation}
+\index{fl4cpp\+::\+Profile\+Node\+Builder@{fl4cpp\+::\+Profile\+Node\+Builder}!build@{build}}
+\index{build@{build}!fl4cpp\+::\+Profile\+Node\+Builder@{fl4cpp\+::\+Profile\+Node\+Builder}}
+\subsubsection[{\texorpdfstring{build(\+Session $\ast$session, Json\+::\+Value $\ast$node\+Data, Json\+::\+Value $\ast$node\+Metadata)}{build(Session *session, Json::Value *nodeData, Json::Value *nodeMetadata)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Profile\+Node} $\ast$ Profile\+Node\+Builder\+::build (
+\begin{DoxyParamCaption}
+\item[{{\bf Session} $\ast$}]{session, }
+\item[{Json\+::\+Value $\ast$}]{node\+Data, }
+\item[{Json\+::\+Value $\ast$}]{node\+Metadata}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classfl4cpp_1_1_profile_node_builder_a72df89a17997f581256b29fc2d525beb}{}\label{classfl4cpp_1_1_profile_node_builder_a72df89a17997f581256b29fc2d525beb}
+Creates a Profile node, depending on metadata and fills it with node data.
+
+N\+O\+TE\+: Group and Event nodes not supported yet.
+
+
+\begin{DoxyParams}{Parameters}
+{\em session} & Pointer to a current \hyperlink{classfl4cpp_1_1_session}{Session} object. \\
+\hline
+{\em node\+Data} & \hyperlink{classfl4cpp_1_1_node}{Node} data, received from Facebook server. \\
+\hline
+{\em node\+Metadata} & \hyperlink{classfl4cpp_1_1_node}{Node} metadata.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns pointer to a newly created Profile node, or zero if node data or its metadata is errorous. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+F\+L4\+C\+P\+P/Profile\+Node.\+h\item 
+F\+L4\+C\+P\+P/Profile\+Node.\+cpp\end{DoxyCompactItemize}

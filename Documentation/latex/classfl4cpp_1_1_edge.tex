@@ -1,0 +1,210 @@
+\hypertarget{classfl4cpp_1_1_edge}{}\section{fl4cpp\+:\+:Edge Class Reference}
+\label{classfl4cpp_1_1_edge}\index{fl4cpp\+::\+Edge@{fl4cpp\+::\+Edge}}
+
+
+{\ttfamily \#include $<$Edge.\+h$>$}
+
+Inheritance diagram for fl4cpp\+:\+:Edge\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.305361cm]{classfl4cpp_1_1_edge}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classfl4cpp_1_1_edge_af454fff745e0ac353ec1bf05a8168ce7}{Edge} (\hyperlink{classfl4cpp_1_1_session}{Session} $\ast$session, \hyperlink{classfl4cpp_1_1_node}{Node} $\ast$owner\+Node, \hyperlink{classfl4cpp_1_1_profile_node}{Profile\+Node} $\ast$root\+Node, std\+::string edge\+Type)
+\item 
+std\+::string \hyperlink{classfl4cpp_1_1_edge_a005aa0bd5c0ca3634829687ffdd3ac8c}{get\+Edge\+Type} () const 
+\item 
+void \hyperlink{classfl4cpp_1_1_edge_af5648af32d7a141f4462b88f7541b5ec}{set\+Edge\+Type} (std\+::string edge\+Type)
+\item 
+virtual bool \hyperlink{classfl4cpp_1_1_edge_ad60e5e96c53340669211c0a7e6097e16}{init\+From\+Graph\+Api} ()
+\item 
+virtual bool \hyperlink{classfl4cpp_1_1_edge_a27d724789467572a7deb2cabad784f81}{init\+With\+Json} (Json\+::\+Value $\ast$edge\+Data)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classfl4cpp_1_1_session}{Session} $\ast$ \hyperlink{classfl4cpp_1_1_edge_abec0de47445dc0132955615060219b14}{get\+Session} () const 
+\item 
+\hyperlink{classfl4cpp_1_1_node}{Node} $\ast$ \hyperlink{classfl4cpp_1_1_edge_a77f406df7586f3c31d41630be6a821eb}{get\+Owner\+Node} () const 
+\item 
+\hyperlink{classfl4cpp_1_1_profile_node}{Profile\+Node} $\ast$ \hyperlink{classfl4cpp_1_1_edge_a59cae73e30e7e8bc5f7f2a7a3c1b9292}{get\+Root\+Node} () const 
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classfl4cpp_1_1_edge_a66ce9ff8535c26e627b864060b22b198}{clear\+Referred\+Nodes} (std\+::vector$<$ \hyperlink{classfl4cpp_1_1_node}{Node} $\ast$ $>$ $\ast$nodes)
+\item 
+static bool \hyperlink{classfl4cpp_1_1_edge_a7fecd22d8faff2c7604d22f1aa1667f5}{is\+Edge\+Data\+Contains\+Referred\+Nodes\+Data} (Json\+::\+Value $\ast$edge\+Data)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Base class for all classes representing Graph Api edges. See\+: \href{https://developers.facebook.com/docs/graph-api/quickstart/v2.0}{\tt https\+://developers.\+facebook.\+com/docs/graph-\/api/quickstart/v2.\+0}
+
+N\+O\+TE\+: Setter methods of the \hyperlink{classfl4cpp_1_1_edge}{Edge} class are used for initialization of the local copy, and has no affect on Graph Api copy. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{fl4cpp\+::\+Edge@{fl4cpp\+::\+Edge}!Edge@{Edge}}
+\index{Edge@{Edge}!fl4cpp\+::\+Edge@{fl4cpp\+::\+Edge}}
+\subsubsection[{\texorpdfstring{Edge(\+Session $\ast$session, Node $\ast$owner\+Node, Profile\+Node $\ast$root\+Node, std\+::string edge\+Type)}{Edge(Session *session, Node *ownerNode, ProfileNode *rootNode, std::string edgeType)}}]{\setlength{\rightskip}{0pt plus 5cm}Edge\+::\+Edge (
+\begin{DoxyParamCaption}
+\item[{{\bf Session} $\ast$}]{session, }
+\item[{{\bf Node} $\ast$}]{owner\+Node, }
+\item[{{\bf Profile\+Node} $\ast$}]{root\+Node, }
+\item[{std\+::string}]{edge\+Type}
+\end{DoxyParamCaption}
+)}\hypertarget{classfl4cpp_1_1_edge_af454fff745e0ac353ec1bf05a8168ce7}{}\label{classfl4cpp_1_1_edge_af454fff745e0ac353ec1bf05a8168ce7}
+Constructs \hyperlink{classfl4cpp_1_1_edge}{Edge} object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em session} & Pointer to a current \hyperlink{classfl4cpp_1_1_session}{Session}. \\
+\hline
+{\em owner\+Node} & Pointer to a node that hold this edge. \\
+\hline
+{\em root\+Node} & Pointer to a root node (Profile \hyperlink{classfl4cpp_1_1_node}{Node} on behalf of which all actions with this edge will be performed). \\
+\hline
+{\em edge\+Type} & \hyperlink{classfl4cpp_1_1_edge}{Edge} type string. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{fl4cpp\+::\+Edge@{fl4cpp\+::\+Edge}!clear\+Referred\+Nodes@{clear\+Referred\+Nodes}}
+\index{clear\+Referred\+Nodes@{clear\+Referred\+Nodes}!fl4cpp\+::\+Edge@{fl4cpp\+::\+Edge}}
+\subsubsection[{\texorpdfstring{clear\+Referred\+Nodes(std\+::vector$<$ Node $\ast$ $>$ $\ast$nodes)}{clearReferredNodes(std::vector< Node * > *nodes)}}]{\setlength{\rightskip}{0pt plus 5cm}void Edge\+::clear\+Referred\+Nodes (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf Node} $\ast$ $>$ $\ast$}]{nodes}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}\hypertarget{classfl4cpp_1_1_edge_a66ce9ff8535c26e627b864060b22b198}{}\label{classfl4cpp_1_1_edge_a66ce9ff8535c26e627b864060b22b198}
+Helper functon that clears a a list of node pointers.
+
+
+\begin{DoxyParams}{Parameters}
+{\em nodes} & Pointer to a list of node pointers. \\
+\hline
+\end{DoxyParams}
+\index{fl4cpp\+::\+Edge@{fl4cpp\+::\+Edge}!get\+Edge\+Type@{get\+Edge\+Type}}
+\index{get\+Edge\+Type@{get\+Edge\+Type}!fl4cpp\+::\+Edge@{fl4cpp\+::\+Edge}}
+\subsubsection[{\texorpdfstring{get\+Edge\+Type() const }{getEdgeType() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string fl4cpp\+::\+Edge\+::get\+Edge\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classfl4cpp_1_1_edge_a005aa0bd5c0ca3634829687ffdd3ac8c}{}\label{classfl4cpp_1_1_edge_a005aa0bd5c0ca3634829687ffdd3ac8c}
+Gets edge type.
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classfl4cpp_1_1_edge}{Edge} type. 
+\end{DoxyReturn}
+\index{fl4cpp\+::\+Edge@{fl4cpp\+::\+Edge}!get\+Owner\+Node@{get\+Owner\+Node}}
+\index{get\+Owner\+Node@{get\+Owner\+Node}!fl4cpp\+::\+Edge@{fl4cpp\+::\+Edge}}
+\subsubsection[{\texorpdfstring{get\+Owner\+Node() const }{getOwnerNode() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Node}$\ast$ fl4cpp\+::\+Edge\+::get\+Owner\+Node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\hypertarget{classfl4cpp_1_1_edge_a77f406df7586f3c31d41630be6a821eb}{}\label{classfl4cpp_1_1_edge_a77f406df7586f3c31d41630be6a821eb}
+Gets owner node.
+
+Pointer to a node that hold this edge. \index{fl4cpp\+::\+Edge@{fl4cpp\+::\+Edge}!get\+Root\+Node@{get\+Root\+Node}}
+\index{get\+Root\+Node@{get\+Root\+Node}!fl4cpp\+::\+Edge@{fl4cpp\+::\+Edge}}
+\subsubsection[{\texorpdfstring{get\+Root\+Node() const }{getRootNode() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Profile\+Node}$\ast$ fl4cpp\+::\+Edge\+::get\+Root\+Node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\hypertarget{classfl4cpp_1_1_edge_a59cae73e30e7e8bc5f7f2a7a3c1b9292}{}\label{classfl4cpp_1_1_edge_a59cae73e30e7e8bc5f7f2a7a3c1b9292}
+Gets root node.
+
+\begin{DoxyReturn}{Returns}
+Pointer to a root node. (Profile \hyperlink{classfl4cpp_1_1_node}{Node} on behalf of which all actions with this edge will be performed). 
+\end{DoxyReturn}
+\index{fl4cpp\+::\+Edge@{fl4cpp\+::\+Edge}!get\+Session@{get\+Session}}
+\index{get\+Session@{get\+Session}!fl4cpp\+::\+Edge@{fl4cpp\+::\+Edge}}
+\subsubsection[{\texorpdfstring{get\+Session() const }{getSession() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Session}$\ast$ fl4cpp\+::\+Edge\+::get\+Session (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\hypertarget{classfl4cpp_1_1_edge_abec0de47445dc0132955615060219b14}{}\label{classfl4cpp_1_1_edge_abec0de47445dc0132955615060219b14}
+Gets current session.
+
+\begin{DoxyReturn}{Returns}
+Pointer to a current session object. 
+\end{DoxyReturn}
+\index{fl4cpp\+::\+Edge@{fl4cpp\+::\+Edge}!init\+From\+Graph\+Api@{init\+From\+Graph\+Api}}
+\index{init\+From\+Graph\+Api@{init\+From\+Graph\+Api}!fl4cpp\+::\+Edge@{fl4cpp\+::\+Edge}}
+\subsubsection[{\texorpdfstring{init\+From\+Graph\+Api()}{initFromGraphApi()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Edge\+::init\+From\+Graph\+Api (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classfl4cpp_1_1_edge_ad60e5e96c53340669211c0a7e6097e16}{}\label{classfl4cpp_1_1_edge_ad60e5e96c53340669211c0a7e6097e16}
+Requests \hyperlink{classfl4cpp_1_1_edge}{Edge} data from Graph Api and initializes \hyperlink{classfl4cpp_1_1_edge}{Edge} object with received Json data.
+
+\begin{DoxyReturn}{Returns}
+Returns true if edge data successfully received and edge object initialized correctly, otherwise -\/ false. 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{classfl4cpp_1_1_picture_edge_a09a911705391d81ae81e146f0a7acf08}{fl4cpp\+::\+Picture\+Edge}, and \hyperlink{classfl4cpp_1_1_feed_edge_a144ad6fb33f0f41a31b7f5e6612dcc1e}{fl4cpp\+::\+Feed\+Edge}.
+
+\index{fl4cpp\+::\+Edge@{fl4cpp\+::\+Edge}!init\+With\+Json@{init\+With\+Json}}
+\index{init\+With\+Json@{init\+With\+Json}!fl4cpp\+::\+Edge@{fl4cpp\+::\+Edge}}
+\subsubsection[{\texorpdfstring{init\+With\+Json(\+Json\+::\+Value $\ast$edge\+Data)}{initWithJson(Json::Value *edgeData)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Edge\+::init\+With\+Json (
+\begin{DoxyParamCaption}
+\item[{Json\+::\+Value $\ast$}]{edge\+Data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classfl4cpp_1_1_edge_a27d724789467572a7deb2cabad784f81}{}\label{classfl4cpp_1_1_edge_a27d724789467572a7deb2cabad784f81}
+Initializes \hyperlink{classfl4cpp_1_1_edge}{Edge} object with Json data.
+
+Should be implemented in derived class, since base edges dont have any common fields.
+
+
+\begin{DoxyParams}{Parameters}
+{\em edge\+Data} & Json object with \hyperlink{classfl4cpp_1_1_edge}{Edge} data, formatted as in usual response from Graph Api on requesting a particular edge.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if edge object initialized successfully, otherwise -\/ false. 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{classfl4cpp_1_1_picture_edge_acf1562c98f091b348b0bfe55212b85ff}{fl4cpp\+::\+Picture\+Edge}, \hyperlink{classfl4cpp_1_1_feed_edge_ad91cbc78cf5c7bd48c3d8e4c4acac38f}{fl4cpp\+::\+Feed\+Edge}, \hyperlink{classfl4cpp_1_1_albums_edge_aa240275cb49531a23ab2d08ca64b5dcb}{fl4cpp\+::\+Albums\+Edge}, \hyperlink{classfl4cpp_1_1_photos_edge_a99c9c7c4e59b51246b13aa9c705a1893}{fl4cpp\+::\+Photos\+Edge}, \hyperlink{classfl4cpp_1_1_accounts_edge_aa7efb829333e417c3fb5c93b4c1cb9b5}{fl4cpp\+::\+Accounts\+Edge}, and \hyperlink{classfl4cpp_1_1_statuses_edge_a487ef20e260d1a136800e7986e04fffa}{fl4cpp\+::\+Statuses\+Edge}.
+
+\index{fl4cpp\+::\+Edge@{fl4cpp\+::\+Edge}!is\+Edge\+Data\+Contains\+Referred\+Nodes\+Data@{is\+Edge\+Data\+Contains\+Referred\+Nodes\+Data}}
+\index{is\+Edge\+Data\+Contains\+Referred\+Nodes\+Data@{is\+Edge\+Data\+Contains\+Referred\+Nodes\+Data}!fl4cpp\+::\+Edge@{fl4cpp\+::\+Edge}}
+\subsubsection[{\texorpdfstring{is\+Edge\+Data\+Contains\+Referred\+Nodes\+Data(\+Json\+::\+Value $\ast$edge\+Data)}{isEdgeDataContainsReferredNodesData(Json::Value *edgeData)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Edge\+::is\+Edge\+Data\+Contains\+Referred\+Nodes\+Data (
+\begin{DoxyParamCaption}
+\item[{Json\+::\+Value $\ast$}]{edge\+Data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}\hypertarget{classfl4cpp_1_1_edge_a7fecd22d8faff2c7604d22f1aa1667f5}{}\label{classfl4cpp_1_1_edge_a7fecd22d8faff2c7604d22f1aa1667f5}
+Helper function that tells if Json data of an edge contains an array of node objects. Some edges used only for publishing and dont hold any info, and others can hold data of some nodes that
+
+
+\begin{DoxyParams}{Parameters}
+{\em edge\+Data} & Json edge data to check.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if json edge data contains array of node objects. 
+\end{DoxyReturn}
+\index{fl4cpp\+::\+Edge@{fl4cpp\+::\+Edge}!set\+Edge\+Type@{set\+Edge\+Type}}
+\index{set\+Edge\+Type@{set\+Edge\+Type}!fl4cpp\+::\+Edge@{fl4cpp\+::\+Edge}}
+\subsubsection[{\texorpdfstring{set\+Edge\+Type(std\+::string edge\+Type)}{setEdgeType(std::string edgeType)}}]{\setlength{\rightskip}{0pt plus 5cm}void fl4cpp\+::\+Edge\+::set\+Edge\+Type (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{edge\+Type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classfl4cpp_1_1_edge_af5648af32d7a141f4462b88f7541b5ec}{}\label{classfl4cpp_1_1_edge_af5648af32d7a141f4462b88f7541b5ec}
+Sets edge type.
+
+
+\begin{DoxyParams}{Parameters}
+{\em edge\+Type} & \hyperlink{classfl4cpp_1_1_edge}{Edge} type. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+F\+L4\+C\+P\+P/Edge.\+h\item 
+F\+L4\+C\+P\+P/Edge.\+cpp\end{DoxyCompactItemize}

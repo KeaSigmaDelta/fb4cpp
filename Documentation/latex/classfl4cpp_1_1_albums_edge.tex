@@ -1,0 +1,114 @@
+\hypertarget{classfl4cpp_1_1_albums_edge}{}\section{fl4cpp\+:\+:Albums\+Edge Class Reference}
+\label{classfl4cpp_1_1_albums_edge}\index{fl4cpp\+::\+Albums\+Edge@{fl4cpp\+::\+Albums\+Edge}}
+
+
+{\ttfamily \#include $<$Albums\+Edge.\+h$>$}
+
+Inheritance diagram for fl4cpp\+:\+:Albums\+Edge\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classfl4cpp_1_1_albums_edge}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classfl4cpp_1_1_albums_edge_a149d580023d47bd1560cc542e856b105}{Albums\+Edge} (\hyperlink{classfl4cpp_1_1_session}{Session} $\ast$session, \hyperlink{classfl4cpp_1_1_node}{Node} $\ast$owner\+Node, \hyperlink{classfl4cpp_1_1_profile_node}{Profile\+Node} $\ast$root\+Node)
+\item 
+virtual bool \hyperlink{classfl4cpp_1_1_albums_edge_aa240275cb49531a23ab2d08ca64b5dcb}{init\+With\+Json} (Json\+::\+Value $\ast$edge\+Data)
+\item 
+bool \hyperlink{classfl4cpp_1_1_albums_edge_acca68bf8f4b114e648dfaf70f7eaa3aa}{publish} (std\+::string album\+Name, std\+::string album\+Discription, Privacy\+Setting\+Types\+::types privacy\+Type)
+\item 
+std\+::vector$<$ \hyperlink{classfl4cpp_1_1_album_node}{Album\+Node} $\ast$ $>$ $\ast$ \hyperlink{classfl4cpp_1_1_albums_edge_a9b7913d0d98a1d3e73426be0eaeeecf8}{get\+Album\+Nodes} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Represents Albums \hyperlink{classfl4cpp_1_1_edge}{Edge} of the facebook Graph Api. You can find detailed description of functions and fields of this edge in the Graph Api documentation. See\+: \href{https://developers.facebook.com/docs/graph-api/reference/v2.0/user/albums}{\tt https\+://developers.\+facebook.\+com/docs/graph-\/api/reference/v2.\+0/user/albums} 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{fl4cpp\+::\+Albums\+Edge@{fl4cpp\+::\+Albums\+Edge}!Albums\+Edge@{Albums\+Edge}}
+\index{Albums\+Edge@{Albums\+Edge}!fl4cpp\+::\+Albums\+Edge@{fl4cpp\+::\+Albums\+Edge}}
+\subsubsection[{\texorpdfstring{Albums\+Edge(\+Session $\ast$session, Node $\ast$owner\+Node, Profile\+Node $\ast$root\+Node)}{AlbumsEdge(Session *session, Node *ownerNode, ProfileNode *rootNode)}}]{\setlength{\rightskip}{0pt plus 5cm}Albums\+Edge\+::\+Albums\+Edge (
+\begin{DoxyParamCaption}
+\item[{{\bf Session} $\ast$}]{session, }
+\item[{{\bf Node} $\ast$}]{owner\+Node, }
+\item[{{\bf Profile\+Node} $\ast$}]{root\+Node}
+\end{DoxyParamCaption}
+)}\hypertarget{classfl4cpp_1_1_albums_edge_a149d580023d47bd1560cc542e856b105}{}\label{classfl4cpp_1_1_albums_edge_a149d580023d47bd1560cc542e856b105}
+Constructs \hyperlink{classfl4cpp_1_1_albums_edge}{Albums\+Edge} object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em session} & Pointer to a current session. \\
+\hline
+{\em owner\+Node} & Pointer to a node that hold this edge. \\
+\hline
+{\em root\+Node} & Pointer to a root node (Profile \hyperlink{classfl4cpp_1_1_node}{Node} on behalf of which all actions with this edge will be performed). \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{fl4cpp\+::\+Albums\+Edge@{fl4cpp\+::\+Albums\+Edge}!get\+Album\+Nodes@{get\+Album\+Nodes}}
+\index{get\+Album\+Nodes@{get\+Album\+Nodes}!fl4cpp\+::\+Albums\+Edge@{fl4cpp\+::\+Albums\+Edge}}
+\subsubsection[{\texorpdfstring{get\+Album\+Nodes()}{getAlbumNodes()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ {\bf Album\+Node}$\ast$ $>$$\ast$ fl4cpp\+::\+Albums\+Edge\+::get\+Album\+Nodes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classfl4cpp_1_1_albums_edge_a9b7913d0d98a1d3e73426be0eaeeecf8}{}\label{classfl4cpp_1_1_albums_edge_a9b7913d0d98a1d3e73426be0eaeeecf8}
+Albums provided by this edge.
+
+\begin{DoxyReturn}{Returns}
+Pointer to a list of pointers to \hyperlink{classfl4cpp_1_1_album_node}{Album\+Node} objects. 
+\end{DoxyReturn}
+\index{fl4cpp\+::\+Albums\+Edge@{fl4cpp\+::\+Albums\+Edge}!init\+With\+Json@{init\+With\+Json}}
+\index{init\+With\+Json@{init\+With\+Json}!fl4cpp\+::\+Albums\+Edge@{fl4cpp\+::\+Albums\+Edge}}
+\subsubsection[{\texorpdfstring{init\+With\+Json(\+Json\+::\+Value $\ast$edge\+Data)}{initWithJson(Json::Value *edgeData)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Albums\+Edge\+::init\+With\+Json (
+\begin{DoxyParamCaption}
+\item[{Json\+::\+Value $\ast$}]{edge\+Data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classfl4cpp_1_1_albums_edge_aa240275cb49531a23ab2d08ca64b5dcb}{}\label{classfl4cpp_1_1_albums_edge_aa240275cb49531a23ab2d08ca64b5dcb}
+Initializes \hyperlink{classfl4cpp_1_1_edge}{Edge} object with Json data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em edge\+Data} & Json object with \hyperlink{classfl4cpp_1_1_edge}{Edge} data, formatted as in usual response from Graph Api on requesting a particular edge.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if edge object initialized successfully, otherwise -\/ false. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classfl4cpp_1_1_edge_a27d724789467572a7deb2cabad784f81}{fl4cpp\+::\+Edge}.
+
+\index{fl4cpp\+::\+Albums\+Edge@{fl4cpp\+::\+Albums\+Edge}!publish@{publish}}
+\index{publish@{publish}!fl4cpp\+::\+Albums\+Edge@{fl4cpp\+::\+Albums\+Edge}}
+\subsubsection[{\texorpdfstring{publish(std\+::string album\+Name, std\+::string album\+Discription, Privacy\+Setting\+Types\+::types privacy\+Type)}{publish(std::string albumName, std::string albumDiscription, PrivacySettingTypes::types privacyType)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Albums\+Edge\+::publish (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{album\+Name, }
+\item[{std\+::string}]{album\+Discription, }
+\item[{Privacy\+Setting\+Types\+::types}]{privacy\+Type}
+\end{DoxyParamCaption}
+)}\hypertarget{classfl4cpp_1_1_albums_edge_acca68bf8f4b114e648dfaf70f7eaa3aa}{}\label{classfl4cpp_1_1_albums_edge_acca68bf8f4b114e648dfaf70f7eaa3aa}
+Publishes new album.
+
+
+\begin{DoxyParams}{Parameters}
+{\em album\+Name} & Name of al album. \\
+\hline
+{\em album\+Description} & Description of an album. \\
+\hline
+{\em privacy\+Type} & Privacy level.\\
+\hline
+{\em Returns} & true if album published successfully, otherwise -\/ false. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+F\+L4\+C\+P\+P/Albums\+Edge.\+h\item 
+F\+L4\+C\+P\+P/Albums\+Edge.\+cpp\end{DoxyCompactItemize}

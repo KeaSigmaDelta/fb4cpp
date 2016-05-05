@@ -1,0 +1,301 @@
+\hypertarget{classfl4cpp_1_1_page_node}{}\section{fl4cpp\+:\+:Page\+Node Class Reference}
+\label{classfl4cpp_1_1_page_node}\index{fl4cpp\+::\+Page\+Node@{fl4cpp\+::\+Page\+Node}}
+
+
+{\ttfamily \#include $<$Page\+Node.\+h$>$}
+
+Inheritance diagram for fl4cpp\+:\+:Page\+Node\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classfl4cpp_1_1_page_node}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classfl4cpp_1_1_page_node_a55e13e309ef5fcdf216eef54cfac2427}{Page\+Node} (\hyperlink{classfl4cpp_1_1_session}{Session} $\ast$session)
+\item 
+virtual bool \hyperlink{classfl4cpp_1_1_page_node_a392ad09e7602c9dd957e2ff1216c7e41}{init\+With\+Json} (Json\+::\+Value $\ast$node\+Data)
+\item 
+std\+::string \hyperlink{classfl4cpp_1_1_page_node_a58e782071754b04b5ac567f4b7494e55}{get\+Category} () const 
+\item 
+void \hyperlink{classfl4cpp_1_1_page_node_ac249d3f0cfed8435c4081cc6a37b57dd}{set\+Category} (std\+::string category)
+\item 
+int \hyperlink{classfl4cpp_1_1_page_node_aaeb69a3c7ad76b65f5f128e5534f51c7}{get\+Checkins} () const 
+\item 
+void \hyperlink{classfl4cpp_1_1_page_node_a723ffd8ddb8cffb47671b123748b96c5}{set\+Checkins} (int checkins)
+\item 
+std\+::string \hyperlink{classfl4cpp_1_1_page_node_a3c349081250d63cd3e076dac4c55c0ab}{get\+Description} () const 
+\item 
+void \hyperlink{classfl4cpp_1_1_page_node_a15bf36e7de847c015a2895a941f418ba}{set\+Description} (std\+::string description)
+\item 
+int \hyperlink{classfl4cpp_1_1_page_node_a5d8185bd12a28c467fbd45ea9d3e179f}{get\+Likes} () const 
+\item 
+void \hyperlink{classfl4cpp_1_1_page_node_a835f7296d50c1d24a20e9de1020b0389}{set\+Likes} (int likes)
+\item 
+std\+::string \hyperlink{classfl4cpp_1_1_page_node_a0360a44ad9fc05490ace0362f9f6504e}{get\+Link} () const 
+\item 
+void \hyperlink{classfl4cpp_1_1_page_node_a9e9443965e4a64a5b3b64e69350a59c9}{set\+Link} (std\+::string link)
+\item 
+std\+::string \hyperlink{classfl4cpp_1_1_page_node_abbe4c31d54e425711bb4f43c31c68289}{get\+Name} () const 
+\item 
+void \hyperlink{classfl4cpp_1_1_page_node_ae32d733424dbbd08a0bb96f37ce4aaf8}{set\+Name} (std\+::string name)
+\item 
+std\+::string \hyperlink{classfl4cpp_1_1_page_node_a54bd07b6ce7573e96cf48a458e46c8ab}{get\+Username} () const 
+\item 
+void \hyperlink{classfl4cpp_1_1_page_node_a1bf6260deb53b983364ce427512e6382}{set\+Username} (std\+::string username)
+\item 
+\hyperlink{classfl4cpp_1_1_albums_edge}{Albums\+Edge} $\ast$ \hyperlink{classfl4cpp_1_1_page_node_a1366c8f74f8d04610125f9168a372579}{get\+Albums\+Edge} (bool \hyperlink{classfl4cpp_1_1_node_a1dd4594ffd7eb08e9e8c5031d2109a59}{init\+From\+Graph\+Api}=true)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Represents Page \hyperlink{classfl4cpp_1_1_node}{Node} of the facebook Graph Api. You can find detailed description of the fields and edges of this node in the Graph Api documentation. See\+: \href{https://developers.facebook.com/docs/graph-api/reference/v2.0/page}{\tt https\+://developers.\+facebook.\+com/docs/graph-\/api/reference/v2.\+0/page}
+
+N\+O\+TE\+: Setter methods of the \hyperlink{classfl4cpp_1_1_page_node}{Page\+Node} class are used for initialization of the local copy, and has no affect on Graph Api copy. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{fl4cpp\+::\+Page\+Node@{fl4cpp\+::\+Page\+Node}!Page\+Node@{Page\+Node}}
+\index{Page\+Node@{Page\+Node}!fl4cpp\+::\+Page\+Node@{fl4cpp\+::\+Page\+Node}}
+\subsubsection[{\texorpdfstring{Page\+Node(\+Session $\ast$session)}{PageNode(Session *session)}}]{\setlength{\rightskip}{0pt plus 5cm}Page\+Node\+::\+Page\+Node (
+\begin{DoxyParamCaption}
+\item[{{\bf Session} $\ast$}]{session}
+\end{DoxyParamCaption}
+)}\hypertarget{classfl4cpp_1_1_page_node_a55e13e309ef5fcdf216eef54cfac2427}{}\label{classfl4cpp_1_1_page_node_a55e13e309ef5fcdf216eef54cfac2427}
+Constructs \hyperlink{classfl4cpp_1_1_page_node}{Page\+Node} object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em session} & Pointer to a current \hyperlink{classfl4cpp_1_1_session}{Session} object. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{fl4cpp\+::\+Page\+Node@{fl4cpp\+::\+Page\+Node}!get\+Albums\+Edge@{get\+Albums\+Edge}}
+\index{get\+Albums\+Edge@{get\+Albums\+Edge}!fl4cpp\+::\+Page\+Node@{fl4cpp\+::\+Page\+Node}}
+\subsubsection[{\texorpdfstring{get\+Albums\+Edge(bool init\+From\+Graph\+Api=true)}{getAlbumsEdge(bool initFromGraphApi=true)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Albums\+Edge} $\ast$ Page\+Node\+::get\+Albums\+Edge (
+\begin{DoxyParamCaption}
+\item[{bool}]{init\+From\+Graph\+Api = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}\hypertarget{classfl4cpp_1_1_page_node_a1366c8f74f8d04610125f9168a372579}{}\label{classfl4cpp_1_1_page_node_a1366c8f74f8d04610125f9168a372579}
+Requests an Album \hyperlink{classfl4cpp_1_1_edge}{Edge} of this page. Received \hyperlink{classfl4cpp_1_1_edge}{Edge} data is saved in \+\_\+albums\+Edge class member.
+
+
+\begin{DoxyParams}{Parameters}
+{\em init\+From\+Graph\+Api} & Flag, that if set to false will result in returning a pointer to a local copy of Photos \hyperlink{classfl4cpp_1_1_edge}{Edge} without sending a request to a Facebook server.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pointer to a local copy of Albums \hyperlink{classfl4cpp_1_1_edge}{Edge}. 
+\end{DoxyReturn}
+\index{fl4cpp\+::\+Page\+Node@{fl4cpp\+::\+Page\+Node}!get\+Category@{get\+Category}}
+\index{get\+Category@{get\+Category}!fl4cpp\+::\+Page\+Node@{fl4cpp\+::\+Page\+Node}}
+\subsubsection[{\texorpdfstring{get\+Category() const }{getCategory() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string fl4cpp\+::\+Page\+Node\+::get\+Category (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classfl4cpp_1_1_page_node_a58e782071754b04b5ac567f4b7494e55}{}\label{classfl4cpp_1_1_page_node_a58e782071754b04b5ac567f4b7494e55}
+Gets category.
+
+\begin{DoxyReturn}{Returns}
+Category. 
+\end{DoxyReturn}
+\index{fl4cpp\+::\+Page\+Node@{fl4cpp\+::\+Page\+Node}!get\+Checkins@{get\+Checkins}}
+\index{get\+Checkins@{get\+Checkins}!fl4cpp\+::\+Page\+Node@{fl4cpp\+::\+Page\+Node}}
+\subsubsection[{\texorpdfstring{get\+Checkins() const }{getCheckins() const }}]{\setlength{\rightskip}{0pt plus 5cm}int fl4cpp\+::\+Page\+Node\+::get\+Checkins (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classfl4cpp_1_1_page_node_aaeb69a3c7ad76b65f5f128e5534f51c7}{}\label{classfl4cpp_1_1_page_node_aaeb69a3c7ad76b65f5f128e5534f51c7}
+Gets checkins.
+
+\begin{DoxyReturn}{Returns}
+Number of checkins. 
+\end{DoxyReturn}
+\index{fl4cpp\+::\+Page\+Node@{fl4cpp\+::\+Page\+Node}!get\+Description@{get\+Description}}
+\index{get\+Description@{get\+Description}!fl4cpp\+::\+Page\+Node@{fl4cpp\+::\+Page\+Node}}
+\subsubsection[{\texorpdfstring{get\+Description() const }{getDescription() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string fl4cpp\+::\+Page\+Node\+::get\+Description (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classfl4cpp_1_1_page_node_a3c349081250d63cd3e076dac4c55c0ab}{}\label{classfl4cpp_1_1_page_node_a3c349081250d63cd3e076dac4c55c0ab}
+Gets description.
+
+\begin{DoxyReturn}{Returns}
+Description. 
+\end{DoxyReturn}
+\index{fl4cpp\+::\+Page\+Node@{fl4cpp\+::\+Page\+Node}!get\+Likes@{get\+Likes}}
+\index{get\+Likes@{get\+Likes}!fl4cpp\+::\+Page\+Node@{fl4cpp\+::\+Page\+Node}}
+\subsubsection[{\texorpdfstring{get\+Likes() const }{getLikes() const }}]{\setlength{\rightskip}{0pt plus 5cm}int fl4cpp\+::\+Page\+Node\+::get\+Likes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classfl4cpp_1_1_page_node_a5d8185bd12a28c467fbd45ea9d3e179f}{}\label{classfl4cpp_1_1_page_node_a5d8185bd12a28c467fbd45ea9d3e179f}
+Gets likes.
+
+\begin{DoxyReturn}{Returns}
+Number of likes. 
+\end{DoxyReturn}
+\index{fl4cpp\+::\+Page\+Node@{fl4cpp\+::\+Page\+Node}!get\+Link@{get\+Link}}
+\index{get\+Link@{get\+Link}!fl4cpp\+::\+Page\+Node@{fl4cpp\+::\+Page\+Node}}
+\subsubsection[{\texorpdfstring{get\+Link() const }{getLink() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string fl4cpp\+::\+Page\+Node\+::get\+Link (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classfl4cpp_1_1_page_node_a0360a44ad9fc05490ace0362f9f6504e}{}\label{classfl4cpp_1_1_page_node_a0360a44ad9fc05490ace0362f9f6504e}
+Gets link.
+
+\begin{DoxyReturn}{Returns}
+Link. 
+\end{DoxyReturn}
+\index{fl4cpp\+::\+Page\+Node@{fl4cpp\+::\+Page\+Node}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!fl4cpp\+::\+Page\+Node@{fl4cpp\+::\+Page\+Node}}
+\subsubsection[{\texorpdfstring{get\+Name() const }{getName() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string fl4cpp\+::\+Page\+Node\+::get\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classfl4cpp_1_1_page_node_abbe4c31d54e425711bb4f43c31c68289}{}\label{classfl4cpp_1_1_page_node_abbe4c31d54e425711bb4f43c31c68289}
+Gets name.
+
+\begin{DoxyReturn}{Returns}
+Name. 
+\end{DoxyReturn}
+\index{fl4cpp\+::\+Page\+Node@{fl4cpp\+::\+Page\+Node}!get\+Username@{get\+Username}}
+\index{get\+Username@{get\+Username}!fl4cpp\+::\+Page\+Node@{fl4cpp\+::\+Page\+Node}}
+\subsubsection[{\texorpdfstring{get\+Username() const }{getUsername() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string fl4cpp\+::\+Page\+Node\+::get\+Username (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classfl4cpp_1_1_page_node_a54bd07b6ce7573e96cf48a458e46c8ab}{}\label{classfl4cpp_1_1_page_node_a54bd07b6ce7573e96cf48a458e46c8ab}
+Gets username.
+
+\begin{DoxyReturn}{Returns}
+Username. 
+\end{DoxyReturn}
+\index{fl4cpp\+::\+Page\+Node@{fl4cpp\+::\+Page\+Node}!init\+With\+Json@{init\+With\+Json}}
+\index{init\+With\+Json@{init\+With\+Json}!fl4cpp\+::\+Page\+Node@{fl4cpp\+::\+Page\+Node}}
+\subsubsection[{\texorpdfstring{init\+With\+Json(\+Json\+::\+Value $\ast$node\+Data)}{initWithJson(Json::Value *nodeData)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Page\+Node\+::init\+With\+Json (
+\begin{DoxyParamCaption}
+\item[{Json\+::\+Value $\ast$}]{node\+Data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classfl4cpp_1_1_page_node_a392ad09e7602c9dd957e2ff1216c7e41}{}\label{classfl4cpp_1_1_page_node_a392ad09e7602c9dd957e2ff1216c7e41}
+Initializes \hyperlink{classfl4cpp_1_1_node}{Node} object with Json data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em node\+Data} & Json object with \hyperlink{classfl4cpp_1_1_node}{Node} data, formatted as in usual response from Graph Api on requesting a particular node.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if node object initialized successfully, otherwise -\/ false. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classfl4cpp_1_1_node_aac67098119277a58b66459323ea03d87}{fl4cpp\+::\+Node}.
+
+\index{fl4cpp\+::\+Page\+Node@{fl4cpp\+::\+Page\+Node}!set\+Category@{set\+Category}}
+\index{set\+Category@{set\+Category}!fl4cpp\+::\+Page\+Node@{fl4cpp\+::\+Page\+Node}}
+\subsubsection[{\texorpdfstring{set\+Category(std\+::string category)}{setCategory(std::string category)}}]{\setlength{\rightskip}{0pt plus 5cm}void fl4cpp\+::\+Page\+Node\+::set\+Category (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{category}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classfl4cpp_1_1_page_node_ac249d3f0cfed8435c4081cc6a37b57dd}{}\label{classfl4cpp_1_1_page_node_ac249d3f0cfed8435c4081cc6a37b57dd}
+Sets category.
+
+
+\begin{DoxyParams}{Parameters}
+{\em category} & Category. \\
+\hline
+\end{DoxyParams}
+\index{fl4cpp\+::\+Page\+Node@{fl4cpp\+::\+Page\+Node}!set\+Checkins@{set\+Checkins}}
+\index{set\+Checkins@{set\+Checkins}!fl4cpp\+::\+Page\+Node@{fl4cpp\+::\+Page\+Node}}
+\subsubsection[{\texorpdfstring{set\+Checkins(int checkins)}{setCheckins(int checkins)}}]{\setlength{\rightskip}{0pt plus 5cm}void fl4cpp\+::\+Page\+Node\+::set\+Checkins (
+\begin{DoxyParamCaption}
+\item[{int}]{checkins}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classfl4cpp_1_1_page_node_a723ffd8ddb8cffb47671b123748b96c5}{}\label{classfl4cpp_1_1_page_node_a723ffd8ddb8cffb47671b123748b96c5}
+Sets checkins.
+
+
+\begin{DoxyParams}{Parameters}
+{\em checkins} & Number of checkins. \\
+\hline
+\end{DoxyParams}
+\index{fl4cpp\+::\+Page\+Node@{fl4cpp\+::\+Page\+Node}!set\+Description@{set\+Description}}
+\index{set\+Description@{set\+Description}!fl4cpp\+::\+Page\+Node@{fl4cpp\+::\+Page\+Node}}
+\subsubsection[{\texorpdfstring{set\+Description(std\+::string description)}{setDescription(std::string description)}}]{\setlength{\rightskip}{0pt plus 5cm}void fl4cpp\+::\+Page\+Node\+::set\+Description (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{description}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classfl4cpp_1_1_page_node_a15bf36e7de847c015a2895a941f418ba}{}\label{classfl4cpp_1_1_page_node_a15bf36e7de847c015a2895a941f418ba}
+Sets description.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Descripton..} & \\
+\hline
+\end{DoxyParams}
+\index{fl4cpp\+::\+Page\+Node@{fl4cpp\+::\+Page\+Node}!set\+Likes@{set\+Likes}}
+\index{set\+Likes@{set\+Likes}!fl4cpp\+::\+Page\+Node@{fl4cpp\+::\+Page\+Node}}
+\subsubsection[{\texorpdfstring{set\+Likes(int likes)}{setLikes(int likes)}}]{\setlength{\rightskip}{0pt plus 5cm}void fl4cpp\+::\+Page\+Node\+::set\+Likes (
+\begin{DoxyParamCaption}
+\item[{int}]{likes}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classfl4cpp_1_1_page_node_a835f7296d50c1d24a20e9de1020b0389}{}\label{classfl4cpp_1_1_page_node_a835f7296d50c1d24a20e9de1020b0389}
+Sets likes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em likes} & Number of likes. \\
+\hline
+\end{DoxyParams}
+\index{fl4cpp\+::\+Page\+Node@{fl4cpp\+::\+Page\+Node}!set\+Link@{set\+Link}}
+\index{set\+Link@{set\+Link}!fl4cpp\+::\+Page\+Node@{fl4cpp\+::\+Page\+Node}}
+\subsubsection[{\texorpdfstring{set\+Link(std\+::string link)}{setLink(std::string link)}}]{\setlength{\rightskip}{0pt plus 5cm}void fl4cpp\+::\+Page\+Node\+::set\+Link (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{link}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classfl4cpp_1_1_page_node_a9e9443965e4a64a5b3b64e69350a59c9}{}\label{classfl4cpp_1_1_page_node_a9e9443965e4a64a5b3b64e69350a59c9}
+Sets link.
+
+
+\begin{DoxyParams}{Parameters}
+{\em link} & Link. \\
+\hline
+\end{DoxyParams}
+\index{fl4cpp\+::\+Page\+Node@{fl4cpp\+::\+Page\+Node}!set\+Name@{set\+Name}}
+\index{set\+Name@{set\+Name}!fl4cpp\+::\+Page\+Node@{fl4cpp\+::\+Page\+Node}}
+\subsubsection[{\texorpdfstring{set\+Name(std\+::string name)}{setName(std::string name)}}]{\setlength{\rightskip}{0pt plus 5cm}void fl4cpp\+::\+Page\+Node\+::set\+Name (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classfl4cpp_1_1_page_node_ae32d733424dbbd08a0bb96f37ce4aaf8}{}\label{classfl4cpp_1_1_page_node_ae32d733424dbbd08a0bb96f37ce4aaf8}
+Sets name.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name. \\
+\hline
+\end{DoxyParams}
+\index{fl4cpp\+::\+Page\+Node@{fl4cpp\+::\+Page\+Node}!set\+Username@{set\+Username}}
+\index{set\+Username@{set\+Username}!fl4cpp\+::\+Page\+Node@{fl4cpp\+::\+Page\+Node}}
+\subsubsection[{\texorpdfstring{set\+Username(std\+::string username)}{setUsername(std::string username)}}]{\setlength{\rightskip}{0pt plus 5cm}void fl4cpp\+::\+Page\+Node\+::set\+Username (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{username}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classfl4cpp_1_1_page_node_a1bf6260deb53b983364ce427512e6382}{}\label{classfl4cpp_1_1_page_node_a1bf6260deb53b983364ce427512e6382}
+Sets username.
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & Username. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+F\+L4\+C\+P\+P/Page\+Node.\+h\item 
+F\+L4\+C\+P\+P/Page\+Node.\+cpp\end{DoxyCompactItemize}
