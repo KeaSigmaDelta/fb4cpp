@@ -39,3 +39,8 @@ To-Do/Wishlist
   blocking the caller. We don't want an application's GUI becoming non-responsive
   every time that a network operation is in progress. So, asynchronous operation
   is preferred
+  
+Credits
+-------
+
+Original code developed by Valerij Kalinin at Draco, LLC.
